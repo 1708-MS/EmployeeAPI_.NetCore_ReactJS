@@ -1,10 +1,10 @@
+using Microsoft.Extensions.Configuration;
 using EmployeeAPI.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -29,7 +29,7 @@ namespace EmployeeAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>
-                (options =>options.UseSqlServer(Configuration.GetConnectionString("conStr")));
+                (options => options.UseSqlServer(Configuration.GetConnectionString("conStr")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
