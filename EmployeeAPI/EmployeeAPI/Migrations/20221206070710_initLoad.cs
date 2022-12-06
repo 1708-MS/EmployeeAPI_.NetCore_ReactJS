@@ -13,7 +13,7 @@ namespace EmployeeAPI.Migrations
                     DepartmentId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     DepartmentName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DepartmentDepCode = table.Column<int>(type: "int", nullable: false)
+                    DepartmentCode = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -43,9 +43,7 @@ namespace EmployeeAPI.Migrations
                     EmployeeName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     EmployeeAddress = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     EmployeeSalary = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DesignationId = table.Column<int>(type: "int", nullable: false),
-                    EmployeesDepartmentId = table.Column<int>(type: "int", nullable: true),
-                    EmployeesEmployeeId = table.Column<int>(type: "int", nullable: true)
+                    DesignationId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -67,7 +65,7 @@ namespace EmployeeAPI.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_DepartmentEmployees", x => new { x.DepartmentId, x.EmployeeId });
+                    table.PrimaryKey("PK_DepartmentEmployees", x => new { x.EmployeeId, x.DepartmentId });
                     table.ForeignKey(
                         name: "FK_DepartmentEmployees_Departments_DepartmentId",
                         column: x => x.DepartmentId,
@@ -83,47 +81,26 @@ namespace EmployeeAPI.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_DepartmentEmployees_EmployeeId",
+                name: "IX_DepartmentEmployees_DepartmentId",
                 table: "DepartmentEmployees",
-                column: "EmployeeId");
+                column: "DepartmentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Employees_DesignationId",
                 table: "Employees",
                 column: "DesignationId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Employees_EmployeesDepartmentId_EmployeesEmployeeId",
-                table: "Employees",
-                columns: new[] { "EmployeesDepartmentId", "EmployeesEmployeeId" });
-
-            migrationBuilder.AddForeignKey(
-                name: "FK_Employees_DepartmentEmployees_EmployeesDepartmentId_EmployeesEmployeeId",
-                table: "Employees",
-                columns: new[] { "EmployeesDepartmentId", "EmployeesEmployeeId" },
-                principalTable: "DepartmentEmployees",
-                principalColumns: new[] { "DepartmentId", "EmployeeId" },
-                onDelete: ReferentialAction.Restrict);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_DepartmentEmployees_Departments_DepartmentId",
-                table: "DepartmentEmployees");
-
-            migrationBuilder.DropForeignKey(
-                name: "FK_DepartmentEmployees_Employees_EmployeeId",
-                table: "DepartmentEmployees");
+            migrationBuilder.DropTable(
+                name: "DepartmentEmployees");
 
             migrationBuilder.DropTable(
                 name: "Departments");
 
             migrationBuilder.DropTable(
                 name: "Employees");
-
-            migrationBuilder.DropTable(
-                name: "DepartmentEmployees");
 
             migrationBuilder.DropTable(
                 name: "Designations");

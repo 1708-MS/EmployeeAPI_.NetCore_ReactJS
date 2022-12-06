@@ -13,6 +13,8 @@ namespace EmployeeAPI.Models
         [Required]
         public String DepartmentName { get; set; }
         [Required]
-        public int DepartmentDepCode { get; set; }
+        public int DepartmentCode { get; set; }
+        public ICollection<DepartmentEmployee> DepartmentEmployees { get; set; }
+
     }
 }

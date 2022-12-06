@@ -58,3 +58,9 @@ F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\obj\Debu
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\obj\Debug\net5.0\EmployeeAPI.pdb
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\obj\Debug\net5.0\EmployeeAPI.genruntimeconfig.cache
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\obj\Debug\net5.0\EmployeeAPI.csproj.AssemblyReference.cache
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\AutoMapper.dll
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

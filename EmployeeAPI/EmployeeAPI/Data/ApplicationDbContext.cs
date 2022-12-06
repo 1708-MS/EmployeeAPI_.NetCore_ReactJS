@@ -19,12 +19,20 @@ namespace EmployeeAPI.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Fluent API configuration
+
             modelBuilder.Entity<DepartmentEmployee>()
-                .HasKey(x => new { x.DepartmentId, x.EmployeeId});
-        }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.EnableSensitiveDataLogging();
+                .HasKey(t => new { t.EmployeeId, t.DepartmentId });
+
+            modelBuilder.Entity<DepartmentEmployee>()
+                        .HasOne(t => t.Employee)
+                        .WithMany(t => t.DepartmentEmployees)
+                        .HasForeignKey(t=>t.EmployeeId);
+
+            modelBuilder.Entity<DepartmentEmployee>()
+                .HasOne(t => t.Department)
+                .WithMany(t => t.DepartmentEmployees)
+                .HasForeignKey(t => t.DepartmentId);
         }
     }
 }

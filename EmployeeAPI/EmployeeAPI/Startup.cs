@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Text.Json.Serialization;
+using EmployeeAPI.MappingProfile;
 
 namespace EmployeeAPI
 {
@@ -32,6 +33,7 @@ namespace EmployeeAPI
             services.AddDbContext<ApplicationDbContext>
                 (options => options.UseSqlServer(Configuration.GetConnectionString("conStr")));
             services.AddControllers();
+            services.AddAutoMapper(typeof(DtoMappingProfile));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "EmployeeAPI", Version = "v1" });

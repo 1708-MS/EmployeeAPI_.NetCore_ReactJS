@@ -14,7 +14,5 @@ namespace EmployeeAPI.Models
         public int DepartmentId { get; set; }
         [ForeignKey("DepartmentId")]
         public Department Department { get; set; }
-        [InverseProperty("Employees")]
-        public ICollection<Employee> Employees { get; set; }
     }
 }
