@@ -14,6 +14,5 @@ namespace EmployeeAPI.Models
         public String DesignationName { get; set; }
         [Required]
         public int DesignationDsgCode { get; set; }
-        public ICollection<Employee> Employees { get; set; }
     }
 }

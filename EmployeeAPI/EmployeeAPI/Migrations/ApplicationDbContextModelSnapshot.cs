@@ -19,21 +19,6 @@ namespace EmployeeAPI.Migrations
                 .HasAnnotation("ProductVersion", "5.0.17")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("DepartmentEmployee", b =>
-                {
-                    b.Property<int>("DepartmentsDepartmentId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("EmployeesEmployeeId")
-                        .HasColumnType("int");
-
-                    b.HasKey("DepartmentsDepartmentId", "EmployeesEmployeeId");
-
-                    b.HasIndex("EmployeesEmployeeId");
-
-                    b.ToTable("DepartmentEmployee");
-                });
-
             modelBuilder.Entity("EmployeeAPI.Models.Department", b =>
                 {
                     b.Property<int>("DepartmentId")
@@ -51,6 +36,21 @@ namespace EmployeeAPI.Migrations
                     b.HasKey("DepartmentId");
 
                     b.ToTable("Departments");
+                });
+
+            modelBuilder.Entity("EmployeeAPI.Models.DepartmentEmployee", b =>
+                {
+                    b.Property<int>("DepartmentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("DepartmentId", "EmployeeId");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("DepartmentEmployees");
                 });
 
             modelBuilder.Entity("EmployeeAPI.Models.Designation", b =>
@@ -79,53 +79,70 @@ namespace EmployeeAPI.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("DesignationId")
+                    b.Property<int>("DesignationId")
                         .HasColumnType("int");
 
                     b.Property<string>("EmployeeAddress")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("EmployeeName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("EmployeeSalary")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("EmployeesDepartmentId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("EmployeesEmployeeId")
+                        .HasColumnType("int");
 
                     b.HasKey("EmployeeId");
 
                     b.HasIndex("DesignationId");
 
+                    b.HasIndex("EmployeesDepartmentId", "EmployeesEmployeeId");
+
                     b.ToTable("Employees");
                 });
 
-            modelBuilder.Entity("DepartmentEmployee", b =>
+            modelBuilder.Entity("EmployeeAPI.Models.DepartmentEmployee", b =>
                 {
-                    b.HasOne("EmployeeAPI.Models.Department", null)
+                    b.HasOne("EmployeeAPI.Models.Department", "Department")
                         .WithMany()
-                        .HasForeignKey("DepartmentsDepartmentId")
+                        .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EmployeeAPI.Models.Employee", null)
+                    b.HasOne("EmployeeAPI.Models.Employee", "Employee")
                         .WithMany()
-                        .HasForeignKey("EmployeesEmployeeId")
+                        .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Department");
+
+                    b.Navigation("Employee");
                 });
 
             modelBuilder.Entity("EmployeeAPI.Models.Employee", b =>
                 {
                     b.HasOne("EmployeeAPI.Models.Designation", "Designation")
+                        .WithMany()
+                        .HasForeignKey("DesignationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EmployeeAPI.Models.DepartmentEmployee", "Employees")
                         .WithMany("Employees")
-                        .HasForeignKey("DesignationId");
+                        .HasForeignKey("EmployeesDepartmentId", "EmployeesEmployeeId");
 
                     b.Navigation("Designation");
+
+                    b.Navigation("Employees");
                 });
 
-            modelBuilder.Entity("EmployeeAPI.Models.Designation", b =>
+            modelBuilder.Entity("EmployeeAPI.Models.DepartmentEmployee", b =>
                 {
                     b.Navigation("Employees");
                 });
