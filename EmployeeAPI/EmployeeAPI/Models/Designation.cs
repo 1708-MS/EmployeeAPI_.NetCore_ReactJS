@@ -13,6 +13,6 @@ namespace EmployeeAPI.Models
         [Required]
         public String DesignationName { get; set; }
         [Required]
-        public int DesignationDsgCode { get; set; }
+        public int DesignationCode { get; set; }
     }
 }

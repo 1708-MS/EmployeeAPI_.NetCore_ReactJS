@@ -59,7 +59,7 @@ namespace EmployeeAPI.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("DesignationDsgCode")
+                    b.Property<int>("DesignationCode")
                         .HasColumnType("int");
 
                     b.Property<string>("DesignationName")
@@ -106,7 +106,7 @@ namespace EmployeeAPI.Migrations
                         .IsRequired();
 
                     b.HasOne("EmployeeAPI.Models.Employee", "Employee")
-                        .WithMany("DepartmentEmployee")
+                        .WithMany("DepartmentEmployees")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -134,7 +134,7 @@ namespace EmployeeAPI.Migrations
 
             modelBuilder.Entity("EmployeeAPI.Models.Employee", b =>
                 {
-                    b.Navigation("DepartmentEmployee");
+                    b.Navigation("DepartmentEmployees");
                 });
 #pragma warning restore 612, 618
         }
