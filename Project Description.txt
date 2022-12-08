@@ -1,0 +1,18 @@
+=> PROJECT STRUCTURE :-
+--------------------
+	1. Employee with one Designation
+	2. Employee with multiple Departments
+
+
+
+=> EmployeeAPI Folder :-
+---------------------
+	1. EmployeeAPI folder contains the backend code file made by using ASP.Net Core API with MVC Core.
+	 	
+
+
+=> employee_multidept_onedesg Folder:-
+--------------------------------- 
+	1. This folder contains the front end made by using React.Js
+
+
