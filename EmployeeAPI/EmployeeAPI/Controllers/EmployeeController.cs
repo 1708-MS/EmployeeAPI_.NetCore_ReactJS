@@ -159,7 +159,7 @@ namespace EmployeeAPI.Controllers
         }
 
         // Directly delete full details of the Employees from Database
-        // This deletes the Designation and Departments assigned to the employees
+        // This deletes the Designation and Departments assigned to the Employees
         [HttpDelete("{id:int}")]
         public IActionResult DeleteEmployees(int id)
         {
