@@ -5,17 +5,14 @@ using System.Threading.Tasks;
 
 namespace EmployeeAPI.Models.DTOs
 {
-    public class EmployeeDTO
+    public class UpdateEmployeesDTO
     {
         public int EmployeeId { get; set; }
         public String EmployeeName { get; set; }
         public String EmployeeAddress { get; set; }
-        public String EmployeeSalary { get; set; }
+        public string EmployeeSalary { get; set; }
         public int DesignationId { get; set; }
-        public string DesignationName { get; set; }
-        public int DesignationCode { get; set; }
         public List<int> DepartmentIds { get; set; }
-        public List<int> DepartmentCodes { get; set; }
-        public List<string> DepartmentNames { get; set; }
+
     }
 }

@@ -12,7 +12,9 @@ namespace EmployeeAPI.MappingProfile
     {
         public DtoMappingProfile()
         {
-            CreateMap<EmployeeDTO, Employee>().ReverseMap();
+            CreateMap<GetAllEmployeesDTO, Employee>().ReverseMap();
+            CreateMap<UpdateEmployeesDTO, Employee>().ReverseMap();
+            CreateMap<SaveEmployeesDTO, Employee>().ReverseMap();
         }
     }
 }
