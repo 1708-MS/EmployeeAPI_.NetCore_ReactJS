@@ -13,6 +13,5 @@ namespace EmployeeAPI.Models.DTOs
         public string EmployeeSalary { get; set; }
         public int DesignationId { get; set; }
         public List<int> DepartmentIds { get; set; }
-
     }
 }
