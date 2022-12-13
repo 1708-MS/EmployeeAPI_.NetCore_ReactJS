@@ -2,7 +2,9 @@ import React from 'react'
 
 function Designation() {
   return (
-    <div>Designation</div>
+    <div>
+      Designation
+    </div>
   )
 }
 

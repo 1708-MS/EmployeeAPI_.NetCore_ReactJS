@@ -14,5 +14,6 @@ namespace EmployeeAPI.Models
         public String DesignationName { get; set; }
         [Required]
         public int DesignationCode { get; set; }
+
     }
 }

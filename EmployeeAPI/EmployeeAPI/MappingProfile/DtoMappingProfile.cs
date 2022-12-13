@@ -15,6 +15,7 @@ namespace EmployeeAPI.MappingProfile
             CreateMap<GetAllEmployeesDTO, Employee>().ReverseMap();
             CreateMap<UpdateEmployeesDTO, Employee>().ReverseMap();
             CreateMap<SaveEmployeesDTO, Employee>().ReverseMap();
+            CreateMap<GetAllDepartmentsDTO, Department>().ReverseMap();
         }
     }
 }

@@ -2,8 +2,10 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 function Employee() {
-  const [employees, setEmployees] = useState(null);
-  // const[employeeForm, setEmployeeForm] = useState({});
+  const[employees, setEmployees] = useState();
+  const[employeeForm, setEmployeeForm] = useState({});
+  const[designations, setDesignations] = useState();
+  const[departments, setDepartments] = useState();
 
   useEffect(() => {
     getAll();
@@ -13,7 +15,7 @@ function Employee() {
     axios.get("https://localhost:44347/api/Employee")
       .then((d) => {
         setEmployees(d.data);
-        console.log("data",d.data)
+        console.log("data",d.data)  
         console.log(employees);
       })
       .catch((e) => {
@@ -21,9 +23,30 @@ function Employee() {
       });
   }
 
-  function renderEmployees() {
+  function getAllDepartment(){
+    axios.get("https://localhost:44347/api/Department").then((d)=>{
+      setDepartments(d.data);
+    }).catch((e)=>{
+      alert("No data found")
+    });
+  }
+
+  function getAllDesignation(){
+    axios.get("https://localhost:44347/api/Designation").then((d)=>{
+      setDesignations(d.data);
+    }).catch((e)=>{
+      alert('No data found');
+    });
+  }
+
+  const changeHandler = (event)=>{
+    setEmployeeForm({...employeeForm,[event.target.name]: event.target.value});
+    //console.log(employeeForm.name);
+}
+
+  function renderEmployees(data) {
     let employeesRows = [];
-    employees?.map((item) =>(
+    employees?.map((item)=>(
       employeesRows.push(
         <tr>
           <td>{item.employeeName}</td>
@@ -31,17 +54,17 @@ function Employee() {
           <td>{item.employeeSalary}</td>
           <td>{item.designationName}</td>
           <td>{item.designationCode}</td>
-          <td>{item.departmentName}</td>
-          <td>{item.departmentCode}</td>
+          <td>{item.departmentName.join(" & ")}</td>
+          <td>{item.departmentCode.join(", ")}</td>
           <td>
             <button
-              className="btn btn-info"
+              className="btn btn-info m-1"
               data-toggle="modal"
-              data-target="#editModal"
+              data-target="#editModal" 
             >
               Edit
             </button>
-            <button className="btn btn-danger">Delete</button>
+            <button className="btn btn-danger m-1">Delete</button>
           </td>
         </tr>
       )
@@ -49,6 +72,7 @@ function Employee() {
     return employeesRows;
   };
 
+  
   return (
     <div>
       <div className="row">
@@ -64,6 +88,7 @@ function Employee() {
         >
           <i className="fa fa-plus">&nbsp;</i>
           New Employee
+          
         </button>
       </div>
       <div className="p-2 m-2">
@@ -100,9 +125,10 @@ function Employee() {
               {/* Body */}
               <div className="modal-body">
                 <div className="form-group row">
-                  <label className="col-sm-4">Employee Name</label>
+                  <label className="col-sm-4 text-left">Employee Name</label>
                   <div className="col-sm-8">
                     <input
+                      onChange={changeHandler}
                       type="text"
                       placeholder="Enter the Employee's Name"
                       name="name"
@@ -112,9 +138,10 @@ function Employee() {
                   </div>
                 </div>
                 <div className="form-group row">
-                  <label className="col-sm-4">Employee Address</label>
+                  <label className="col-sm-4 text-left">Employee Address</label>
                   <div className="col-sm-8">
                     <input
+                      onChange={changeHandler}
                       type="text"
                       placeholder="Enter the Employee's Address"
                       name="address"
@@ -124,9 +151,10 @@ function Employee() {
                   </div>
                 </div>
                 <div className="form-group row">
-                  <label className="col-sm-4">Salary</label>
+                  <label className="col-sm-4 text-left">Employee Salary</label>
                   <div className="col-sm-8">
                     <input
+                      onChange={changeHandler}
                       type="text"
                       placeholder="Enter the Employee's Salary"
                       name="salary"
@@ -136,20 +164,35 @@ function Employee() {
                   </div>
                 </div>
                 <div className="form-group row">
-                  <label className="col-sm-4">Department Name</label>
+                  <label className="col-sm-4 text-left">Department Name</label>
                   <div className="col-sm-8">
-                    <select>
-                      <option value="0"></option>
+                    <select onChange={getAllDepartment()} selectMultiple={true} className="form-control">
+                      <option value="0">Select one or multiple Departments</option>
+                      {
+                        departments?.map((dept)=>(
+                          <option value={dept.departmentId}>{dept.departmentName}</option>
+                        ))
+                      }
                     </select>
                   </div>
                 </div>
                 <div className="form-group row">
-                  <label className="col-sm-4">Designation Name</label>
+                  <label className="col-sm-4 text-left">Designation Name</label>
                   <div className="col-sm-8">
-                    <select>
-                      <option value="0">Select Designation</option>
+                    <select onChange={getAllDesignation()} className="form-control">
+                      <option value="0">Select a Designation</option>
+                      {
+                        designations?.map((desg)=>(
+                          <option value={desg.designationId}>{desg.designationName}</option>
+                        ))
+                      }
                     </select>
                   </div>
+                </div>
+                {/* Footer */}
+                <div className='modal-footer'>
+                  <button className='btn btn-success form-control'>Save</button>
+                  <button className='btn btn-danger form-control' data-dismiss='modal'>Cancel</button>
                 </div>
               </div>
             </div>
