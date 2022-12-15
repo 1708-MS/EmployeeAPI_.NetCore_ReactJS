@@ -1,21 +1,23 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
+
 function Employee() {
-  const[employees, setEmployees] = useState();
-  const[employeeForm, setEmployeeForm] = useState({});
-  const[designations, setDesignations] = useState();
-  const[departments, setDepartments] = useState();
+  const [employees, setEmployees] = useState();
+  const [employeeForm, setEmployeeForm] = useState({});
+  const [designations, setDesignations] = useState([]);
+  const [departments, setDepartments] = useState([]);
 
   useEffect(() => {
     getAll();
-  },[]);
+  }, []);
 
   function getAll() {
-    axios.get("https://localhost:44347/api/Employee")
+    axios
+      .get("https://localhost:44347/api/Employee")
       .then((d) => {
         setEmployees(d.data);
-        console.log("data",d.data)  
+        console.log("data", d.data);
         console.log(employees);
       })
       .catch((e) => {
@@ -23,30 +25,53 @@ function Employee() {
       });
   }
 
-  function getAllDepartment(){
-    axios.get("https://localhost:44347/api/Department").then((d)=>{
-      setDepartments(d.data);
-    }).catch((e)=>{
-      alert("No data found")
-    });
+  function getAllDepartment() {
+    axios
+      .get("https://localhost:44347/api/Department")
+      .then((d) => {
+        setDepartments(d.data);
+      })
+      .catch((e) => {
+        alert("No data found");
+      });
   }
 
-  function getAllDesignation(){
-    axios.get("https://localhost:44347/api/Designation").then((d)=>{
-      setDesignations(d.data);
-    }).catch((e)=>{
-      alert('No data found');
-    });
+  function getAllDesignation() {
+    axios
+      .get("https://localhost:44347/api/Designation")
+      .then((d) => {
+        setDesignations(d.data);
+      //  console.log(designations.designationId)
+      })
+      .catch((e) => {
+        alert("no data found");
+      });
   }
 
-  const changeHandler = (event)=>{
-    setEmployeeForm({...employeeForm,[event.target.name]: event.target.value});
-    //console.log(employeeForm.name);
+  const changeHandler = (event) => {
+    setEmployeeForm({
+      ...employeeForm,
+      [event.target.name]: event.target.value,
+    });
+    console.log("Employee Details",employeeForm);
+  };
+
+  function deleteClick(employeeId){
+    axios.delete("https://localhost:44347/api/Employee/"+employeeId).then((d)=>{
+        getAll();
+    }).catch((e)=>{
+        alert('something went wrong. Plz try again.')
+    })
 }
+
+  function getDropDown(){
+    getAllDesignation();
+    getAllDepartment();
+  }
 
   function renderEmployees(data) {
     let employeesRows = [];
-    employees?.map((item)=>(
+    employees?.map((item) =>
       employeesRows.push(
         <tr>
           <td>{item.employeeName}</td>
@@ -60,19 +85,19 @@ function Employee() {
             <button
               className="btn btn-info m-1"
               data-toggle="modal"
-              data-target="#editModal" 
+              data-target="#editModal"
+              //onClick={()=>editClick(item)}
             >
               Edit
             </button>
-            <button className="btn btn-danger m-1">Delete</button>
+            <button className="btn btn-danger m-1" onClick={()=>deleteClick(item.employeeId)}>Delete</button>
           </td>
         </tr>
       )
-    ));
+    );
     return employeesRows;
-  };
+  }
 
-  
   return (
     <div>
       <div className="row">
@@ -85,10 +110,10 @@ function Employee() {
           className="btn btn-info"
           data-toggle="modal"
           data-target="#newModal"
+          onClick={getDropDown}
         >
           <i className="fa fa-plus">&nbsp;</i>
           New Employee
-          
         </button>
       </div>
       <div className="p-2 m-2">
@@ -112,33 +137,33 @@ function Employee() {
       {/* Save Employees */}
 
       <form>
-        <div className="modal" id="newModal" role="dialog">
+        <div className="modal fade" id="newModal" role="dialog">
           <div className="modal-dialog">
             <div className="modal-content">
               {/* Header */}
               <div className="modal-header">
                 <div className="modal-title text-primary">New Employee</div>
-                <button className="close btn btn-danger">
+                <button className="close btn btn-danger" data-dismiss="modal">
                   <span>&times;</span>
                 </button>
               </div>
               {/* Body */}
               <div className="modal-body">
                 <div className="form-group row">
-                  <label className="col-sm-4 text-left">Employee Name</label>
+                  <label className="col-sm-4 text-left" for="txtName" >Employee Name</label>
                   <div className="col-sm-8">
                     <input
                       onChange={changeHandler}
                       type="text"
                       placeholder="Enter the Employee's Name"
                       name="name"
-                      id="txtname"
+                      id="txtName"
                       className="form-control"
                     />
                   </div>
                 </div>
                 <div className="form-group row">
-                  <label className="col-sm-4 text-left">Employee Address</label>
+                  <label className="col-sm-4 text-left" for="txtAddress" >Employee Address</label>
                   <div className="col-sm-8">
                     <input
                       onChange={changeHandler}
@@ -147,11 +172,12 @@ function Employee() {
                       name="address"
                       id="txtAddress"
                       className="form-control"
+                      
                     />
                   </div>
                 </div>
                 <div className="form-group row">
-                  <label className="col-sm-4 text-left">Employee Salary</label>
+                  <label className="col-sm-4 text-left" for="txtSalary" >Employee Salary</label>
                   <div className="col-sm-8">
                     <input
                       onChange={changeHandler}
@@ -166,33 +192,164 @@ function Employee() {
                 <div className="form-group row">
                   <label className="col-sm-4 text-left">Department Name</label>
                   <div className="col-sm-8">
-                    <select onChange={getAllDepartment()} selectMultiple={true} className="form-control">
-                      <option value="0">Select one or multiple Departments</option>
-                      {
-                        departments?.map((dept)=>(
-                          <option value={dept.departmentId}>{dept.departmentName}</option>
-                        ))
-                      }
+                    <select
+                      className="form-control basic-multi-select"
+                      name="department"
+                      options={getAllDepartment}
+                      onChange={changeHandler}
+                    >
+                      <option>
+                        Select one or multiple Departments
+                      </option>
+                      {departments?.map((dept) => (
+                        <option value={dept.departmentId}>
+                          {dept.departmentName}
+                        </option>
+                      ))}
                     </select>
                   </div>
                 </div>
                 <div className="form-group row">
                   <label className="col-sm-4 text-left">Designation Name</label>
                   <div className="col-sm-8">
-                    <select onChange={getAllDesignation()} className="form-control">
-                      <option value="0">Select a Designation</option>
-                      {
-                        designations?.map((desg)=>(
-                          <option value={desg.designationId}>{desg.designationName}</option>
-                        ))
-                      }
+                    <select
+                     className="form-control"
+                     name="designation"
+                     type="text"
+                     onChange={changeHandler}
+                     >
+                      <option>Select a Designation</option>
+                      {designations?.map((desg) => (
+                        <option
+                          value={desg.designationId}
+                        >
+                          {desg.designationName}
+                        </option>
+                      ))}
                     </select>
                   </div>
                 </div>
                 {/* Footer */}
-                <div className='modal-footer'>
-                  <button className='btn btn-success form-control'>Save</button>
-                  <button className='btn btn-danger form-control' data-dismiss='modal'>Cancel</button>
+                <div className="modal-footer">
+                  <button className="btn btn-success form-control">Save</button>
+                  <button
+                    className="btn btn-danger form-control"
+                    data-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+    {/* Edit Employees */}
+    <form>
+        <div className="modal" id="editModal" role="dialog">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              {/* Header */}
+              <div className="modal-header">
+                <div className="modal-title text-primary">Edit Employee</div>
+                <button className="close btn btn-danger">
+                  <span>&times;</span>
+                </button>
+              </div>
+              {/* Body */}
+              <div className="modal-body">
+                <div className="form-group row">
+                  <label className="col-sm-4 text-left" for="txtName">Employee Name</label>
+                  <div className="col-sm-8">
+                    <input
+                      onChange={changeHandler}
+                      type="text"
+                      placeholder="Enter the Employee's Name"
+                      name="name"
+                      id="txtName"
+                      value={employeeForm.employeeName}
+                      className="form-control"
+                    />
+                  </div>
+                </div>
+                <div className="form-group row">
+                  <label className="col-sm-4 text-left" for="txtAddress">Employee Address</label>
+                  <div className="col-sm-8">
+                    <input
+                      onChange={changeHandler}
+                      type="text"
+                      placeholder="Enter the Employee's Address"
+                      name="address"
+                      id="txtAddress"
+                      value={employeeForm.employeeAddress}
+                      className="form-control"
+                    />
+                  </div>
+                </div>
+                <div className="form-group row">
+                  <label className="col-sm-4 text-left" for="txtSalary">Employee Salary</label>
+                  <div className="col-sm-8">
+                    <input
+                      onChange={changeHandler}
+                      type="text"
+                      placeholder="Enter the Employee's Salary"
+                      name="salary"
+                      id="txtSalary"
+                      value={employeeForm.employeeSalary}
+                      className="form-control"
+                    />
+                  </div>
+                </div>
+                <div className="form-group row">
+                  <label className="col-sm-4 text-left">Department Name</label>
+                  <div className="col-sm-8">
+                    <select
+                      onChange={changeHandler}
+                      className="form-control basic-multi-select"
+                      type="text"
+                      name="department"
+                    >
+                      <option value="0">
+                        Select one or multiple Departments
+                      </option>
+                      {departments?.map((dept) => (
+                        <option value={dept.departmentId}>
+                          {dept.departmentName}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+                <div className="form-group row">
+                  <label className="col-sm-4 text-left">Designation Name</label>
+                  <div className="col-sm-8">
+                    <select
+                     className="form-control"
+                     name="designation"
+                     type="text"
+                     onChange={changeHandler}
+                     >
+
+                      {designations?.map((desg) => (
+                        <option
+                          value={desg.designationId}
+                        >
+                          {desg.designationName}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+                {/* Footer */}
+                <div className="modal-footer">
+                  <button className="btn btn-success form-control">Update</button>
+                  <button
+                    className="btn btn-danger form-control"
+                    data-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
                 </div>
               </div>
             </div>
