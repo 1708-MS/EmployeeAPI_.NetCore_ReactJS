@@ -11,6 +11,6 @@ namespace EmployeeAPI.Models.DTOs
         public String EmployeeAddress { get; set; }
         public string EmployeeSalary { get; set; }
         public int DesignationId { get; set; }
-        public List<int> DepartmentIds { get; set; }
+        public List<int> DepartmentId { get; set; }
     }
 }

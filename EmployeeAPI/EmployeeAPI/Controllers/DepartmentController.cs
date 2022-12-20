@@ -35,5 +35,12 @@ namespace EmployeeAPI.Controllers
                                  };
             return Ok(departmentInDb);
         }
+        [HttpGet("{id}")]
+        public IActionResult GetDepartmentByEmployeeId(int id)
+        {
+            //var departmentOfEmployee = _context.Employees.Include(x => x.Designation).Where(x => x.EmployeeId == id).ToList();
+            var departmentOfEmployee = _context.DepartmentEmployees.Include(dept => dept.Department).Where(emp => emp.EmployeeId == id).ToList();
+            return Ok(departmentOfEmployee);
+        }
     }
 }

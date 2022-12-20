@@ -41,7 +41,9 @@ namespace EmployeeAPI.Controllers
                                       DesignationName = employee.Designation.DesignationName,
                                       DesignationCode = employee.Designation.DesignationCode,
                                       DepartmentName = _context.DepartmentEmployees.Where(empId => empId.EmployeeId == employee.EmployeeId).Select(depNames => depNames.Department.DepartmentName).ToList(),
-                                      DepartmentCode = _context.DepartmentEmployees.Where(empId => empId.EmployeeId == employee.EmployeeId).Select(depCodes => depCodes.Department.DepartmentCode).ToList()
+                                      DepartmentCode = _context.DepartmentEmployees.Where(empId => empId.EmployeeId == employee.EmployeeId).Select(depCodes => depCodes.Department.DepartmentCode).ToList(),
+                                      DepartmentIds = _context.DepartmentEmployees.Where(empId => empId.EmployeeId == employee.EmployeeId).Select(depIds => depIds.Department.DepartmentId).ToList(),
+                                      DesignationId = employee.DesignationId
                                   });
             List<GetAllEmployeesDTO> getAllEmployeesDTOs = new List<GetAllEmployeesDTO>();
             foreach (var employee in employeeFromDb)
@@ -109,7 +111,7 @@ namespace EmployeeAPI.Controllers
 
                 // Departments allotment to the saved Employees 
                 List<DepartmentEmployee> departmentEmployees = new List<DepartmentEmployee>();
-                foreach (var empDep in saveEmployeesDTO.DepartmentIds)
+                foreach (var empDep in saveEmployeesDTO.DepartmentId)
                 {
                     DepartmentEmployee departmentEmployee = new DepartmentEmployee()
                     {

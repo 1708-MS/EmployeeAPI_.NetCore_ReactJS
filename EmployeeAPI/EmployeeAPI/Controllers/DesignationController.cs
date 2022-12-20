@@ -1,6 +1,7 @@
 ﻿using EmployeeAPI.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,12 @@ namespace EmployeeAPI.Controllers
         {
             var designationInDb = _context.Designations.ToList();
             return Ok(designationInDb);
+        }
+        [HttpGet("{id}")]
+        public IActionResult GetDesignationByEmployeeId(int id)
+        {
+            var designationOfEmployee = _context.Employees.Include(x=>x.Designation).Where(x=>x.EmployeeId==id).ToList();
+            return Ok(designationOfEmployee);
         }
     }
 }

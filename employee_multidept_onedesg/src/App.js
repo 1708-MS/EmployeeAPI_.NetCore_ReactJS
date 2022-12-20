@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Designation from "./Screens/Designation";
 import Department from "./Screens/Department";
-import Employee from "./Screens/Employee";
+import Employee from "./Screens/Employees/Employee";
 import Header from "./Screens/Header";
 import Home from "./Screens/Home";
 import About from "./Screens/About";
