@@ -206,7 +206,6 @@ function EditEmployee({ getAll, employeeForm, departments, designations }) {
                   <button
                     type="submit"
                     className="btn btn-success form-control"
-                   
                   >
                     Save
                   </button>

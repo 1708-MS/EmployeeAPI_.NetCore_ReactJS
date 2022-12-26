@@ -1,0 +1,1 @@
+//ai algo to study stock trading?   

@@ -10,11 +10,13 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
+using NLog.Web;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Text.Json.Serialization;
 using EmployeeAPI.MappingProfile;
+using Microsoft.Extensions.Logging.AzureAppServices;
+using NLog.Extensions.Logging;
 
 namespace EmployeeAPI
 {
@@ -48,13 +50,21 @@ namespace EmployeeAPI
                         .AllowAnyOrigin()
                         .AllowAnyHeader()
                         .AllowAnyMethod();
-
                     });
             });
+            // Configure NLog as the logging provider
+            services.AddLogging(loggingBuilder =>
+            {
+                loggingBuilder.ClearProviders();
+                loggingBuilder.SetMinimumLevel(LogLevel.Trace);
+                loggingBuilder.AddNLog();
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggingBuilder loggingBuilder)
         {
             if (env.IsDevelopment())
             {
@@ -73,6 +83,9 @@ namespace EmployeeAPI
             {
                 endpoints.MapControllers();
             });
+            // Enable NLog to capture log messages from the application
+            loggingBuilder.AddNLog();
+            AspNetExtensions.AddNLogWeb(loggingBuilder).AddNLogWeb();
         }
     }
 }

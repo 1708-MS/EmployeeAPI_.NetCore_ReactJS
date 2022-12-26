@@ -19,8 +19,6 @@ namespace EmployeeAPI.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //Fluent API configuration
-
             modelBuilder.Entity<DepartmentEmployee>()
                 .HasKey(t => new { t.EmployeeId, t.DepartmentId });
 
