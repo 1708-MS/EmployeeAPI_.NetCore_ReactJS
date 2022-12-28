@@ -21,8 +21,6 @@ F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debu
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
-F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Extensions.Logging.AzureAppServices.dll
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Identity.Client.dll
@@ -37,15 +35,6 @@ F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debu
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\NLog.dll
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\NLog.Extensions.Logging.dll
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
-F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Serilog.dll
-F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Serilog.AspNetCore.dll
-F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
-F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
-F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
-F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
-F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Serilog.Sinks.Console.dll
-F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
-F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Serilog.Sinks.File.dll
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll

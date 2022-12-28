@@ -9,7 +9,6 @@ function Employee() {
   const [designations, setDesignations] = useState([]);
   const [departments, setDepartments] = useState([]);
 
-
   useEffect(() => {
     getAll();
     getAllDesignation();
@@ -35,9 +34,11 @@ function Employee() {
     axios
       .get("https://localhost:44347/api/Department")
       .then((d) => {
-        setDepartments(d.data?.map(item => {
-          return { label: item?.departmentName, value: item?.departmentId}
-        }));
+        setDepartments(
+          d.data?.map((item) => {
+            return { label: item?.departmentName, value: item?.departmentId };
+          })
+        );
       })
       .catch((e) => {
         alert("No data found");
@@ -49,9 +50,11 @@ function Employee() {
     axios
       .get("https://localhost:44347/api/Designation")
       .then((d) => {
-        setDesignations(d.data?.map(item => {
-          return {label: item?.designationName ,value: item?.designationId }
-        }));
+        setDesignations(
+          d.data?.map((item) => {
+            return { label: item?.designationName, value: item?.designationId };
+          })
+        );
         //  console.log(designations.designationId)
       })
       .catch((e) => {
@@ -69,7 +72,6 @@ function Employee() {
     });
     console.log("Employee Details", employeeForm);
   };
-
 
   //Save the details of the NewEmployees including Departments(Single or Multiple) and Designation(Single only)
   // const saveClick = () => {
@@ -185,7 +187,7 @@ function Employee() {
         </button>
       </div>
       <div className="p-2 m-2">
-        <table className="table table-stripped table-bordered table-hover table-active">
+        <table className="table table-striped table-bordered table-hover table-active">
           <thead>
             <tr>
               <th>Name</th>
@@ -203,12 +205,19 @@ function Employee() {
       </div>
 
       {/* Save/Add new Employees */}
-      <AddEmployee getAll={() => getAll()} departments={departments} designations={designations} />
-      
-      {/* Edit Employees */}
-      <EditEmployee getAll={() => getAll()} employeeForm={employeeForm} departments={departments} designations={designations} />
+      <AddEmployee
+        getAll={() => getAll()}
+        departments={departments}
+        designations={designations}
+      />
 
-      
+      {/* Edit Employees */}
+      <EditEmployee
+        getAll={() => getAll()}
+        employeeForm={employeeForm}
+        departments={departments}
+        designations={designations}
+      />
     </div>
   );
 }

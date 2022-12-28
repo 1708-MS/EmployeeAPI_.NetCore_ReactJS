@@ -1,4 +1,4 @@
-2022-12-26 22:47:00.4431||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+2022-12-28 15:50:21.5670||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
  ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
    at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
@@ -9,10 +9,8 @@
    at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
    at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
    at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
-   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
-   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
    at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
-2022-12-26 23:15:37.5883||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+2022-12-28 15:53:07.8288||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
  ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
    at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
@@ -23,6 +21,172 @@
    at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
    at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
    at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 15:55:29.8403||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
    at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
    at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
    at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 15:57:55.1165||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 16:02:06.7657||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 16:03:11.0806||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 16:09:47.5353||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 16:21:26.1674||FATAL|Microsoft.AspNetCore.Hosting.WebHost|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()|url: |action: 
+2022-12-28 16:34:52.0636||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 16:35:33.8734||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 16:37:39.2920||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 16:48:08.2095||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 16:49:29.1810||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 16:49:53.2631||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 16:54:18.7658||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.Logger`1[[EmployeeAPI.Startup, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]' for the parameter 'logger' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.Logger`1[EmployeeAPI.Startup]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)|url: |action: 
+2022-12-28 17:04:52.5345||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: https://localhost/api/Employee|action: GetAllEmployees
+2022-12-28 17:04:53.6918||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: https://localhost/api/Employee|action: GetAllEmployees
+2022-12-28 17:04:54.5299||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: https://localhost/api/Employee|action: GetAllEmployees
+2022-12-28 19:21:02.5595||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2022-12-28 19:21:02.5595||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2022-12-28 19:21:02.5595||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2022-12-28 19:21:02.5595||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2022-12-28 19:21:02.5595||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2022-12-28 19:21:02.5595||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2022-12-28 19:21:02.5755||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2022-12-28 19:21:03.7152||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2022-12-28 19:21:04.3250||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 

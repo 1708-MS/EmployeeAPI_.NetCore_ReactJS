@@ -1,5 +1,5 @@
-2022-12-26 22:47:00.3568||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
-2022-12-26 22:47:00.4431||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+2022-12-28 15:50:21.4982||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 15:50:21.5670||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
  ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
    at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
@@ -10,11 +10,9 @@
    at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
    at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
    at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
-   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
-   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
    at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
-2022-12-26 23:15:37.5225||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
-2022-12-26 23:15:37.5883||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+2022-12-28 15:53:07.6866||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 15:53:07.8288||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
  ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
    at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
@@ -25,6 +23,966 @@
    at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
    at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
    at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 15:55:29.6996||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 15:55:29.8403||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
    at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
    at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
    at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 15:57:55.0690||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 15:57:55.1165||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 16:02:06.7178||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:02:06.7657||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 16:03:11.0257||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:03:11.0806||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 16:09:47.4428||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:09:47.5353||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 16:21:26.0837||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Hosting starting 
+2022-12-28 16:21:26.1674||FATAL|Microsoft.AspNetCore.Hosting.WebHost|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2022-12-28 16:21:26.1939||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Hosting shutdown 
+2022-12-28 16:34:52.0140||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:34:52.0636||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 16:35:33.8107||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:35:33.8734||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 16:37:39.2477||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:37:39.2920||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 16:48:08.1627||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:48:08.2095||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 16:49:29.0099||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:49:29.1810||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 16:49:53.2580||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:49:53.2631||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.ILoggingBuilder' for the parameter 'loggingBuilder' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.ILoggingBuilder' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 16:54:18.5764||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:54:18.7658||FATAL|Microsoft.AspNetCore.Hosting.Diagnostics|Application startup exception System.Exception: Could not resolve a service of type 'Microsoft.Extensions.Logging.Logger`1[[EmployeeAPI.Startup, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]' for the parameter 'logger' of method 'Configure' on type 'EmployeeAPI.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.Extensions.Logging.Logger`1[EmployeeAPI.Startup]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-12-28 16:55:01.1746||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:55:01.4785||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly EmployeeAPI 
+2022-12-28 16:55:01.5056||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-12-28 16:55:01.5056||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-12-28 16:55:01.5056||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI 
+2022-12-28 16:55:01.5056||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-12-28 16:55:01.5325||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger - - 
+2022-12-28 16:55:01.5325||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-12-28 16:55:01.5325||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:55:01.6008||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18230571292401074206" disconnecting. 
+2022-12-28 16:55:01.6008||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/index.html - - 
+2022-12-28 16:55:01.6008||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:55:01.6436||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger - - - 301 - - 72.1001ms 
+2022-12-28 16:55:01.7509||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18230571292401074208" disconnecting. 
+2022-12-28 16:55:01.7509||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/index.html - - - 200 - text/html;charset=utf-8 147.9875ms 
+2022-12-28 16:55:01.7926||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - - 
+2022-12-28 16:55:01.7926||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:55:01.7954||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - - 
+2022-12-28 16:55:01.7954||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:55:01.7954||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - - 
+2022-12-28 16:55:01.7954||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:55:01.7954||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 16:55:01.8097||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 16:55:01.8097||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 16:55:01.8487||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-12-28 16:55:01.8487||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-12-28 16:55:01.8487||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-12-28 16:55:01.8487||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18230571296696041489" disconnecting. 
+2022-12-28 16:55:01.8487||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - - - 200 142933 text/css 61.7694ms 
+2022-12-28 16:55:01.8698||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18230571292401074210" disconnecting. 
+2022-12-28 16:55:01.8735||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 76.9163ms 
+2022-12-28 16:55:01.9329||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686489066864665" disconnecting. 
+2022-12-28 16:55:01.9335||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 138.0362ms 
+2022-12-28 16:55:02.2827||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-bundle.js.map - - 
+2022-12-28 16:55:02.2827||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:55:02.2827||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /swagger-ui-bundle.js.map does not match an existing file 
+2022-12-28 16:55:02.2827||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js.map - - 
+2022-12-28 16:55:02.2827||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:55:02.2827||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /swagger-ui-standalone-preset.js.map does not match an existing file 
+2022-12-28 16:55:02.3000||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - 
+2022-12-28 16:55:02.3000||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:55:02.3296||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-bundle.js.map' 
+2022-12-28 16:55:02.3296||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js.map' 
+2022-12-28 16:55:02.3296||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-12-28 16:55:02.3296||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-12-28 16:55:02.3296||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 46.6124ms 
+2022-12-28 16:55:02.3296||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-bundle.js.map - - - 404 - - 50.3388ms 
+2022-12-28 16:55:02.4265||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686489066864667" disconnecting. 
+2022-12-28 16:55:02.4265||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 126.4418ms 
+2022-12-28 16:58:45.9134||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 16:58:46.2216||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly EmployeeAPI 
+2022-12-28 16:58:46.2464||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-12-28 16:58:46.2464||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-12-28 16:58:46.2464||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI 
+2022-12-28 16:58:46.2464||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-12-28 16:58:46.2698||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger - - 
+2022-12-28 16:58:46.2698||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-12-28 16:58:46.2698||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:58:46.3347||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18158513698363146266" disconnecting. 
+2022-12-28 16:58:46.3347||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/index.html - - 
+2022-12-28 16:58:46.3347||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:58:46.3347||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger - - - 301 - - 68.4912ms 
+2022-12-28 16:58:46.4516||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686493361831972" disconnecting. 
+2022-12-28 16:58:46.4516||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/index.html - - - 200 - text/html;charset=utf-8 114.7023ms 
+2022-12-28 16:58:46.4966||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - - 
+2022-12-28 16:58:46.4966||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:58:46.4966||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - - 
+2022-12-28 16:58:46.4966||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:58:46.4966||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - - 
+2022-12-28 16:58:46.4966||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:58:46.5149||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 16:58:46.5311||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 16:58:46.5311||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 16:58:46.5610||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-12-28 16:58:46.5610||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-12-28 16:58:46.5610||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-12-28 16:58:46.5610||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18158513706953080859" disconnecting. 
+2022-12-28 16:58:46.5610||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - - - 200 142933 text/css 71.5236ms 
+2022-12-28 16:58:46.5824||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18230571296696041495" disconnecting. 
+2022-12-28 16:58:46.5824||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 79.2166ms 
+2022-12-28 16:58:46.6401||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628895028936721" disconnecting. 
+2022-12-28 16:58:46.6401||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 144.1056ms 
+2022-12-28 16:58:46.9972||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-bundle.js.map - - 
+2022-12-28 16:58:46.9972||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:58:46.9972||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /swagger-ui-bundle.js.map does not match an existing file 
+2022-12-28 16:58:47.0215||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js.map - - 
+2022-12-28 16:58:47.0215||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:58:47.0215||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /swagger-ui-standalone-preset.js.map does not match an existing file 
+2022-12-28 16:58:47.0384||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - 
+2022-12-28 16:58:47.0384||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 16:58:47.0488||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-bundle.js.map' 
+2022-12-28 16:58:47.0488||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js.map' 
+2022-12-28 16:58:47.0488||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-12-28 16:58:47.0488||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-12-28 16:58:47.0488||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 31.2472ms 
+2022-12-28 16:58:47.0488||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-bundle.js.map - - - 404 - - 55.8441ms 
+2022-12-28 16:58:47.1914||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628899323904028" disconnecting. 
+2022-12-28 16:58:47.1914||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 152.9814ms 
+2022-12-28 17:00:44.4492||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 17:00:44.7423||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly EmployeeAPI 
+2022-12-28 17:00:44.7669||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-12-28 17:00:44.7669||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-12-28 17:00:44.7669||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI 
+2022-12-28 17:00:44.7669||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-12-28 17:00:44.7886||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger - - 
+2022-12-28 17:00:44.7886||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-12-28 17:00:44.7886||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:00:44.8733||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/index.html - - 
+2022-12-28 17:00:44.8733||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:00:44.8733||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18230571305285976088" disconnecting. 
+2022-12-28 17:00:44.8733||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger - - - 301 - - 89.2014ms 
+2022-12-28 17:00:44.9848||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686489066864670" disconnecting. 
+2022-12-28 17:00:44.9848||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/index.html - - - 200 - text/html;charset=utf-8 112.3956ms 
+2022-12-28 17:00:45.0248||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - - 
+2022-12-28 17:00:45.0248||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:00:45.0248||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - - 
+2022-12-28 17:00:45.0248||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:00:45.0248||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - - 
+2022-12-28 17:00:45.0248||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:00:45.0452||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 17:00:45.0452||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 17:00:45.0452||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 17:00:45.0887||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-12-28 17:00:45.0887||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-12-28 17:00:45.0887||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-12-28 17:00:45.0931||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18230571305285976090" disconnecting. 
+2022-12-28 17:00:45.0931||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - - - 200 142933 text/css 67.5144ms 
+2022-12-28 17:00:45.1082||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628899323904030" disconnecting. 
+2022-12-28 17:00:45.1082||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 82.0977ms 
+2022-12-28 17:00:45.1592||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18158513711248048139" disconnecting. 
+2022-12-28 17:00:45.1592||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 135.9178ms 
+2022-12-28 17:00:45.4642||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js.map - - 
+2022-12-28 17:00:45.4642||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:00:45.4649||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /swagger-ui-standalone-preset.js.map does not match an existing file 
+2022-12-28 17:00:45.4649||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-bundle.js.map - - 
+2022-12-28 17:00:45.4649||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:00:45.4649||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /swagger-ui-bundle.js.map does not match an existing file 
+2022-12-28 17:00:45.4877||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - 
+2022-12-28 17:00:45.4877||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:00:45.5237||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js.map' 
+2022-12-28 17:00:45.5237||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-12-28 17:00:45.5278||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-bundle.js.map' 
+2022-12-28 17:00:45.5278||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-12-28 17:00:45.5278||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 65.1026ms 
+2022-12-28 17:00:45.5278||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-bundle.js.map - - - 404 - - 63.9110ms 
+2022-12-28 17:00:45.6405||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18158513698363146268" disconnecting. 
+2022-12-28 17:00:45.6405||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 152.8506ms 
+2022-12-28 17:03:48.0457||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-12-28 17:03:48.3584||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly EmployeeAPI 
+2022-12-28 17:03:48.3824||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-12-28 17:03:48.3824||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-12-28 17:03:48.3876||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI 
+2022-12-28 17:03:48.3876||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-12-28 17:03:48.4043||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger - - 
+2022-12-28 17:03:48.4043||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-12-28 17:03:48.4043||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:03:48.4831||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686489066864673" disconnecting. 
+2022-12-28 17:03:48.4831||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/index.html - - 
+2022-12-28 17:03:48.4831||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:03:48.4831||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger - - - 301 - - 80.9993ms 
+2022-12-28 17:03:48.5940||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686480476930084" disconnecting. 
+2022-12-28 17:03:48.5940||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/index.html - - - 200 - text/html;charset=utf-8 110.5388ms 
+2022-12-28 17:03:48.6309||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - - 
+2022-12-28 17:03:48.6309||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - - 
+2022-12-28 17:03:48.6309||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:03:48.6309||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:03:48.6309||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - - 
+2022-12-28 17:03:48.6309||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:03:48.6458||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 17:03:48.6458||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 17:03:48.6458||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 17:03:48.6849||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-12-28 17:03:48.6849||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-12-28 17:03:48.6849||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-12-28 17:03:48.6849||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628899323904032" disconnecting. 
+2022-12-28 17:03:48.6849||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - - - 200 142933 text/css 58.2764ms 
+2022-12-28 17:03:48.7032||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686480476930086" disconnecting. 
+2022-12-28 17:03:48.7032||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 69.4221ms 
+2022-12-28 17:03:48.7591||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18230571305285976092" disconnecting. 
+2022-12-28 17:03:48.7591||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 128.6213ms 
+2022-12-28 17:03:49.0298||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-bundle.js.map - - 
+2022-12-28 17:03:49.0298||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:03:49.0298||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /swagger-ui-bundle.js.map does not match an existing file 
+2022-12-28 17:03:49.0806||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-bundle.js.map' 
+2022-12-28 17:03:49.0806||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-12-28 17:03:49.0806||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-bundle.js.map - - - 404 - - 54.4657ms 
+2022-12-28 17:03:49.0978||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js.map - - 
+2022-12-28 17:03:49.0978||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:03:49.0978||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /swagger-ui-standalone-preset.js.map does not match an existing file 
+2022-12-28 17:03:49.0978||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js.map' 
+2022-12-28 17:03:49.0978||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-12-28 17:03:49.0978||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 2.6476ms 
+2022-12-28 17:03:49.1104||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - 
+2022-12-28 17:03:49.1104||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:03:49.2394||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.0148ms 
+2022-12-28 17:03:49.2394||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628890733969442" disconnecting. 
+2022-12-28 17:04:52.2118||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/api/Employee - - 
+2022-12-28 17:04:52.2118||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 17:04:52.2118||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-12-28 17:04:52.2320||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Employee' 
+2022-12-28 17:04:52.2320||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI)' with route pattern 'api/Employee' is valid for the request path '/api/Employee' 
+2022-12-28 17:04:52.2320||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI)' 
+2022-12-28 17:04:52.2320||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI)' 
+2022-12-28 17:04:52.2320||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-12-28 17:04:52.2709||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployees() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI). 
+2022-12-28 17:04:52.2709||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-12-28 17:04:52.2709||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-12-28 17:04:52.2709||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-12-28 17:04:52.2709||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-12-28 17:04:52.2709||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-12-28 17:04:52.2709||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI) 
+2022-12-28 17:04:52.4729||DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-12-28 17:04:52.5031||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI) 
+2022-12-28 17:04:52.5031||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-12-28 17:04:52.5031||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-12-28 17:04:52.5031||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-12-28 17:04:52.5031||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-12-28 17:04:52.5031||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-12-28 17:04:52.5031||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI) - Validation state: Valid 
+2022-12-28 17:04:52.5345||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly 
+2022-12-28 17:04:53.0708||DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'EmployeeId'} was not created on entity type 'DepartmentEmployee' as the properties are already covered by the index {'EmployeeId', 'DepartmentId'}. 
+2022-12-28 17:04:53.3138||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-12-28 17:04:53.4087||DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Employee>()
+    .Join(
+        inner: DbSet<DepartmentEmployee>(), 
+        outerKeySelector: employee => employee.EmployeeId, 
+        innerKeySelector: EmployeeDepartment => EmployeeDepartment.EmployeeId, 
+        resultSelector: (employee, EmployeeDepartment) => new GetAllEmployeesDTO{ 
+            EmployeeId = employee.EmployeeId, 
+            EmployeeName = employee.EmployeeName, 
+            EmployeeAddress = employee.EmployeeAddress, 
+            EmployeeSalary = employee.EmployeeSalary, 
+            DesignationName = employee.Designation.DesignationName, 
+            DesignationCode = employee.Designation.DesignationCode, 
+            DepartmentName = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentName)
+                .ToList(), 
+            DepartmentCode = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentCode)
+                .ToList(), 
+            DepartmentIds = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentId)
+                .ToList(), 
+            DesignationId = employee.DesignationId 
+        }
+    )' 
+2022-12-28 17:04:53.6918||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2022-12-28 17:04:53.7677||DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<GetAllEmployeesDTO>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+        SELECT e.EmployeeId, e.EmployeeName, e.EmployeeAddress, e.EmployeeSalary, d0.DesignationName, d0.DesignationCode, e.DesignationId, d.EmployeeId, d.DepartmentId, d0.DesignationId, t.DepartmentName, t.EmployeeId, t.DepartmentId, t.DepartmentId0, t0.DepartmentCode, t0.EmployeeId, t0.DepartmentId, t0.DepartmentId0, t1.DepartmentId, t1.EmployeeId, t1.DepartmentId0
+        FROM Employees AS e
+        INNER JOIN DepartmentEmployees AS d ON e.EmployeeId == d.EmployeeId
+        INNER JOIN Designations AS d0 ON e.DesignationId == d0.DesignationId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d2.DepartmentName, d1.EmployeeId, d1.DepartmentId, d2.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d1
+            INNER JOIN Departments AS d2 ON d1.DepartmentId == d2.DepartmentId
+        ) AS t ON e.EmployeeId == t.EmployeeId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d4.DepartmentCode, d3.EmployeeId, d3.DepartmentId, d4.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d3
+            INNER JOIN Departments AS d4 ON d3.DepartmentId == d4.DepartmentId
+        ) AS t0 ON e.EmployeeId == t0.EmployeeId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d6.DepartmentId, d5.EmployeeId, d5.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d5
+            INNER JOIN Departments AS d6 ON d5.DepartmentId == d6.DepartmentId
+        ) AS t1 ON e.EmployeeId == t1.EmployeeId
+        ORDER BY e.EmployeeId ASC, d.EmployeeId ASC, d.DepartmentId ASC, d0.DesignationId ASC, t.EmployeeId ASC, t.DepartmentId ASC, t.DepartmentId0 ASC, t0.EmployeeId ASC, t0.DepartmentId ASC, t0.DepartmentId0 ASC, t1.EmployeeId ASC, t1.DepartmentId0 ASC, t1.DepartmentId ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, GetAllEmployeesDTO>, 
+    EmployeeAPI.Data.ApplicationDbContext, 
+    False, 
+    False
+)' 
+2022-12-28 17:04:53.8031||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-12-28 17:04:53.8712||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (64ms). 
+2022-12-28 17:04:53.8712||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 17:04:54.4189||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 17:04:54.4189||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[EmployeeName], [e].[EmployeeAddress], [e].[EmployeeSalary], [d0].[DesignationName], [d0].[DesignationCode], [e].[DesignationId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[DepartmentName], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[DepartmentCode], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[DepartmentId], [t1].[EmployeeId], [t1].[DepartmentId0]
+FROM [Employees] AS [e]
+INNER JOIN [DepartmentEmployees] AS [d] ON [e].[EmployeeId] = [d].[EmployeeId]
+INNER JOIN [Designations] AS [d0] ON [e].[DesignationId] = [d0].[DesignationId]
+LEFT JOIN (
+    SELECT [d2].[DepartmentName], [d1].[EmployeeId], [d1].[DepartmentId], [d2].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d1]
+    INNER JOIN [Departments] AS [d2] ON [d1].[DepartmentId] = [d2].[DepartmentId]
+) AS [t] ON [e].[EmployeeId] = [t].[EmployeeId]
+LEFT JOIN (
+    SELECT [d4].[DepartmentCode], [d3].[EmployeeId], [d3].[DepartmentId], [d4].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d3]
+    INNER JOIN [Departments] AS [d4] ON [d3].[DepartmentId] = [d4].[DepartmentId]
+) AS [t0] ON [e].[EmployeeId] = [t0].[EmployeeId]
+LEFT JOIN (
+    SELECT [d6].[DepartmentId], [d5].[EmployeeId], [d5].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d5]
+    INNER JOIN [Departments] AS [d6] ON [d5].[DepartmentId] = [d6].[DepartmentId]
+) AS [t1] ON [e].[EmployeeId] = [t1].[EmployeeId]
+ORDER BY [e].[EmployeeId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[EmployeeId], [t1].[DepartmentId0], [t1].[DepartmentId] 
+2022-12-28 17:04:54.4828||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (58ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[EmployeeName], [e].[EmployeeAddress], [e].[EmployeeSalary], [d0].[DesignationName], [d0].[DesignationCode], [e].[DesignationId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[DepartmentName], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[DepartmentCode], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[DepartmentId], [t1].[EmployeeId], [t1].[DepartmentId0]
+FROM [Employees] AS [e]
+INNER JOIN [DepartmentEmployees] AS [d] ON [e].[EmployeeId] = [d].[EmployeeId]
+INNER JOIN [Designations] AS [d0] ON [e].[DesignationId] = [d0].[DesignationId]
+LEFT JOIN (
+    SELECT [d2].[DepartmentName], [d1].[EmployeeId], [d1].[DepartmentId], [d2].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d1]
+    INNER JOIN [Departments] AS [d2] ON [d1].[DepartmentId] = [d2].[DepartmentId]
+) AS [t] ON [e].[EmployeeId] = [t].[EmployeeId]
+LEFT JOIN (
+    SELECT [d4].[DepartmentCode], [d3].[EmployeeId], [d3].[DepartmentId], [d4].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d3]
+    INNER JOIN [Departments] AS [d4] ON [d3].[DepartmentId] = [d4].[DepartmentId]
+) AS [t0] ON [e].[EmployeeId] = [t0].[EmployeeId]
+LEFT JOIN (
+    SELECT [d6].[DepartmentId], [d5].[EmployeeId], [d5].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d5]
+    INNER JOIN [Departments] AS [d6] ON [d5].[DepartmentId] = [d6].[DepartmentId]
+) AS [t1] ON [e].[EmployeeId] = [t1].[EmployeeId]
+ORDER BY [e].[EmployeeId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[EmployeeId], [t1].[DepartmentId0], [t1].[DepartmentId] 
+2022-12-28 17:04:54.5056||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-12-28 17:04:54.5056||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 17:04:54.5135||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 17:04:54.5135||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2004.931ms. 
+2022-12-28 17:04:54.5135||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-12-28 17:04:54.5135||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-12-28 17:04:54.5135||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-12-28 17:04:54.5135||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-12-28 17:04:54.5135||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-12-28 17:04:54.5135||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-12-28 17:04:54.5135||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-12-28 17:04:54.5135||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2022-12-28 17:04:54.5135||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Buffering IAsyncEnumerable instance of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[EmployeeAPI.Models.DTOs.GetAllEmployeesDTO, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-12-28 17:04:54.5135||DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Employee>()
+    .Join(
+        inner: DbSet<DepartmentEmployee>(), 
+        outerKeySelector: employee => employee.EmployeeId, 
+        innerKeySelector: EmployeeDepartment => EmployeeDepartment.EmployeeId, 
+        resultSelector: (employee, EmployeeDepartment) => new GetAllEmployeesDTO{ 
+            EmployeeId = employee.EmployeeId, 
+            EmployeeName = employee.EmployeeName, 
+            EmployeeAddress = employee.EmployeeAddress, 
+            EmployeeSalary = employee.EmployeeSalary, 
+            DesignationName = employee.Designation.DesignationName, 
+            DesignationCode = employee.Designation.DesignationCode, 
+            DepartmentName = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentName)
+                .ToList(), 
+            DepartmentCode = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentCode)
+                .ToList(), 
+            DepartmentIds = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentId)
+                .ToList(), 
+            DesignationId = employee.DesignationId 
+        }
+    )' 
+2022-12-28 17:04:54.5299||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2022-12-28 17:04:54.5464||DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<GetAllEmployeesDTO>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+        SELECT e.EmployeeId, e.EmployeeName, e.EmployeeAddress, e.EmployeeSalary, d0.DesignationName, d0.DesignationCode, e.DesignationId, d.EmployeeId, d.DepartmentId, d0.DesignationId, t.DepartmentName, t.EmployeeId, t.DepartmentId, t.DepartmentId0, t0.DepartmentCode, t0.EmployeeId, t0.DepartmentId, t0.DepartmentId0, t1.DepartmentId, t1.EmployeeId, t1.DepartmentId0
+        FROM Employees AS e
+        INNER JOIN DepartmentEmployees AS d ON e.EmployeeId == d.EmployeeId
+        INNER JOIN Designations AS d0 ON e.DesignationId == d0.DesignationId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d2.DepartmentName, d1.EmployeeId, d1.DepartmentId, d2.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d1
+            INNER JOIN Departments AS d2 ON d1.DepartmentId == d2.DepartmentId
+        ) AS t ON e.EmployeeId == t.EmployeeId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d4.DepartmentCode, d3.EmployeeId, d3.DepartmentId, d4.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d3
+            INNER JOIN Departments AS d4 ON d3.DepartmentId == d4.DepartmentId
+        ) AS t0 ON e.EmployeeId == t0.EmployeeId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d6.DepartmentId, d5.EmployeeId, d5.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d5
+            INNER JOIN Departments AS d6 ON d5.DepartmentId == d6.DepartmentId
+        ) AS t1 ON e.EmployeeId == t1.EmployeeId
+        ORDER BY e.EmployeeId ASC, d.EmployeeId ASC, d.DepartmentId ASC, d0.DesignationId ASC, t.EmployeeId ASC, t.DepartmentId ASC, t.DepartmentId0 ASC, t0.EmployeeId ASC, t0.DepartmentId ASC, t0.DepartmentId0 ASC, t1.EmployeeId ASC, t1.DepartmentId0 ASC, t1.DepartmentId ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, GetAllEmployeesDTO>, 
+    EmployeeAPI.Data.ApplicationDbContext, 
+    False, 
+    False
+)' 
+2022-12-28 17:04:54.5464||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-12-28 17:04:54.5464||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-12-28 17:04:54.5464||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 17:04:54.5610||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 17:04:54.5610||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[EmployeeName], [e].[EmployeeAddress], [e].[EmployeeSalary], [d0].[DesignationName], [d0].[DesignationCode], [e].[DesignationId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[DepartmentName], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[DepartmentCode], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[DepartmentId], [t1].[EmployeeId], [t1].[DepartmentId0]
+FROM [Employees] AS [e]
+INNER JOIN [DepartmentEmployees] AS [d] ON [e].[EmployeeId] = [d].[EmployeeId]
+INNER JOIN [Designations] AS [d0] ON [e].[DesignationId] = [d0].[DesignationId]
+LEFT JOIN (
+    SELECT [d2].[DepartmentName], [d1].[EmployeeId], [d1].[DepartmentId], [d2].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d1]
+    INNER JOIN [Departments] AS [d2] ON [d1].[DepartmentId] = [d2].[DepartmentId]
+) AS [t] ON [e].[EmployeeId] = [t].[EmployeeId]
+LEFT JOIN (
+    SELECT [d4].[DepartmentCode], [d3].[EmployeeId], [d3].[DepartmentId], [d4].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d3]
+    INNER JOIN [Departments] AS [d4] ON [d3].[DepartmentId] = [d4].[DepartmentId]
+) AS [t0] ON [e].[EmployeeId] = [t0].[EmployeeId]
+LEFT JOIN (
+    SELECT [d6].[DepartmentId], [d5].[EmployeeId], [d5].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d5]
+    INNER JOIN [Departments] AS [d6] ON [d5].[DepartmentId] = [d6].[DepartmentId]
+) AS [t1] ON [e].[EmployeeId] = [t1].[EmployeeId]
+ORDER BY [e].[EmployeeId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[EmployeeId], [t1].[DepartmentId0], [t1].[DepartmentId] 
+2022-12-28 17:04:54.5801||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[EmployeeName], [e].[EmployeeAddress], [e].[EmployeeSalary], [d0].[DesignationName], [d0].[DesignationCode], [e].[DesignationId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[DepartmentName], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[DepartmentCode], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[DepartmentId], [t1].[EmployeeId], [t1].[DepartmentId0]
+FROM [Employees] AS [e]
+INNER JOIN [DepartmentEmployees] AS [d] ON [e].[EmployeeId] = [d].[EmployeeId]
+INNER JOIN [Designations] AS [d0] ON [e].[DesignationId] = [d0].[DesignationId]
+LEFT JOIN (
+    SELECT [d2].[DepartmentName], [d1].[EmployeeId], [d1].[DepartmentId], [d2].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d1]
+    INNER JOIN [Departments] AS [d2] ON [d1].[DepartmentId] = [d2].[DepartmentId]
+) AS [t] ON [e].[EmployeeId] = [t].[EmployeeId]
+LEFT JOIN (
+    SELECT [d4].[DepartmentCode], [d3].[EmployeeId], [d3].[DepartmentId], [d4].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d3]
+    INNER JOIN [Departments] AS [d4] ON [d3].[DepartmentId] = [d4].[DepartmentId]
+) AS [t0] ON [e].[EmployeeId] = [t0].[EmployeeId]
+LEFT JOIN (
+    SELECT [d6].[DepartmentId], [d5].[EmployeeId], [d5].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d5]
+    INNER JOIN [Departments] AS [d6] ON [d5].[DepartmentId] = [d6].[DepartmentId]
+) AS [t1] ON [e].[EmployeeId] = [t1].[EmployeeId]
+ORDER BY [e].[EmployeeId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[EmployeeId], [t1].[DepartmentId0], [t1].[DepartmentId] 
+2022-12-28 17:04:54.6027||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-12-28 17:04:54.6027||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 17:04:54.6027||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 17:04:54.6027||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter 
+2022-12-28 17:04:54.6075||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-12-28 17:04:54.6075||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-12-28 17:04:54.6075||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-12-28 17:04:54.6075||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-12-28 17:04:54.6075||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeAPI.Models.DTOs.GetAllEmployeesDTO, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-12-28 17:04:54.7977||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2022-12-28 17:04:54.7977||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-12-28 17:04:54.7977||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-12-28 17:04:54.7977||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI) in 2528.1435ms 
+2022-12-28 17:04:54.7977||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI)' 
+2022-12-28 17:04:54.7977||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628890733969444" disconnecting. 
+2022-12-28 17:04:54.7977||DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2022-12-28 17:04:54.8103||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/api/Employee - - - 200 1029 application/json;+charset=utf-8 2598.5069ms 
+2022-12-28 19:20:53.9779||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Hosting starting 
+2022-12-28 19:20:54.2566||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Hosting started 
+2022-12-28 19:20:54.2659||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly EmployeeAPI 
+2022-12-28 19:20:54.3056||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger - - 
+2022-12-28 19:20:54.3087||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-12-28 19:20:54.3087||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 19:20:54.3867||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/index.html - - 
+2022-12-28 19:20:54.3867||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 19:20:54.3867||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628890733969446" disconnecting. 
+2022-12-28 19:20:54.4281||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger - - - 301 - - 84.1550ms 
+2022-12-28 19:20:54.5311||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686489066864675" disconnecting. 
+2022-12-28 19:20:54.5311||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/index.html - - - 200 - text/html;charset=utf-8 144.3815ms 
+2022-12-28 19:20:54.5811||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - - 
+2022-12-28 19:20:54.5811||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 19:20:54.5811||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - - 
+2022-12-28 19:20:54.5811||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 19:20:54.6230||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - - 
+2022-12-28 19:20:54.6230||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 19:20:54.6230||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 19:20:54.6230||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 19:20:54.6230||TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2022-12-28 19:20:54.6625||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-12-28 19:20:54.6625||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-12-28 19:20:54.6625||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-12-28 19:20:54.6625||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18158513711248048142" disconnecting. 
+2022-12-28 19:20:54.6625||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - - - 200 142933 text/css 86.3016ms 
+2022-12-28 19:20:54.6771||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628895028936728" disconnecting. 
+2022-12-28 19:20:54.6771||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 54.1348ms 
+2022-12-28 19:20:54.7190||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686489066864677" disconnecting. 
+2022-12-28 19:20:54.7578||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 170.9790ms 
+2022-12-28 19:20:55.3808||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-bundle.js.map - - 
+2022-12-28 19:20:55.3808||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 19:20:55.3808||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /swagger-ui-bundle.js.map does not match an existing file 
+2022-12-28 19:20:55.3997||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js.map - - 
+2022-12-28 19:20:55.3997||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 19:20:55.3997||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /swagger-ui-standalone-preset.js.map does not match an existing file 
+2022-12-28 19:20:55.4250||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-bundle.js.map' 
+2022-12-28 19:20:55.4250||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js.map' 
+2022-12-28 19:20:55.4250||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-12-28 19:20:55.4250||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2022-12-28 19:20:55.4250||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-bundle.js.map - - - 404 - - 47.2757ms 
+2022-12-28 19:20:55.4250||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 28.3595ms 
+2022-12-28 19:20:55.4375||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - 
+2022-12-28 19:20:55.4375||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 19:20:55.5558||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.2759ms 
+2022-12-28 19:20:55.5558||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18158513711248048146" disconnecting. 
+2022-12-28 19:21:02.2967||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44347/api/Employee - - 
+2022-12-28 19:21:02.2967||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2022-12-28 19:21:02.2967||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-12-28 19:21:02.2967||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Employee' 
+2022-12-28 19:21:02.3090||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI)' with route pattern 'api/Employee' is valid for the request path '/api/Employee' 
+2022-12-28 19:21:02.3090||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI)' 
+2022-12-28 19:21:02.3090||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI)' 
+2022-12-28 19:21:02.3090||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-12-28 19:21:02.3354||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployees() on controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI). 
+2022-12-28 19:21:02.3354||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-12-28 19:21:02.3354||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-12-28 19:21:02.3354||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-12-28 19:21:02.3354||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-12-28 19:21:02.3354||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-12-28 19:21:02.3354||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI) 
+2022-12-28 19:21:02.4821||DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-12-28 19:21:02.5106||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller EmployeeAPI.Controllers.EmployeeController (EmployeeAPI) 
+2022-12-28 19:21:02.5106||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-12-28 19:21:02.5106||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-12-28 19:21:02.5106||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-12-28 19:21:02.5106||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-12-28 19:21:02.5106||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-12-28 19:21:02.5153||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI) - Validation state: Valid 
+2022-12-28 19:21:02.5595||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly 
+2022-12-28 19:21:02.5595||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message 
+2022-12-28 19:21:02.5595||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message 
+2022-12-28 19:21:02.5595||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message 
+2022-12-28 19:21:02.5595||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message 
+2022-12-28 19:21:02.5595||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message 
+2022-12-28 19:21:02.5755||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message 
+2022-12-28 19:21:03.1140||DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'EmployeeId'} was not created on entity type 'DepartmentEmployee' as the properties are already covered by the index {'EmployeeId', 'DepartmentId'}. 
+2022-12-28 19:21:03.3625||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2022-12-28 19:21:03.4391||DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Employee>()
+    .Join(
+        inner: DbSet<DepartmentEmployee>(), 
+        outerKeySelector: employee => employee.EmployeeId, 
+        innerKeySelector: EmployeeDepartment => EmployeeDepartment.EmployeeId, 
+        resultSelector: (employee, EmployeeDepartment) => new GetAllEmployeesDTO{ 
+            EmployeeId = employee.EmployeeId, 
+            EmployeeName = employee.EmployeeName, 
+            EmployeeAddress = employee.EmployeeAddress, 
+            EmployeeSalary = employee.EmployeeSalary, 
+            DesignationName = employee.Designation.DesignationName, 
+            DesignationCode = employee.Designation.DesignationCode, 
+            DepartmentName = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentName)
+                .ToList(), 
+            DepartmentCode = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentCode)
+                .ToList(), 
+            DepartmentIds = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentId)
+                .ToList(), 
+            DesignationId = employee.DesignationId 
+        }
+    )' 
+2022-12-28 19:21:03.7152||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2022-12-28 19:21:03.7773||DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<GetAllEmployeesDTO>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+        SELECT e.EmployeeId, e.EmployeeName, e.EmployeeAddress, e.EmployeeSalary, d0.DesignationName, d0.DesignationCode, e.DesignationId, d.EmployeeId, d.DepartmentId, d0.DesignationId, t.DepartmentName, t.EmployeeId, t.DepartmentId, t.DepartmentId0, t0.DepartmentCode, t0.EmployeeId, t0.DepartmentId, t0.DepartmentId0, t1.DepartmentId, t1.EmployeeId, t1.DepartmentId0
+        FROM Employees AS e
+        INNER JOIN DepartmentEmployees AS d ON e.EmployeeId == d.EmployeeId
+        INNER JOIN Designations AS d0 ON e.DesignationId == d0.DesignationId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d2.DepartmentName, d1.EmployeeId, d1.DepartmentId, d2.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d1
+            INNER JOIN Departments AS d2 ON d1.DepartmentId == d2.DepartmentId
+        ) AS t ON e.EmployeeId == t.EmployeeId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d4.DepartmentCode, d3.EmployeeId, d3.DepartmentId, d4.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d3
+            INNER JOIN Departments AS d4 ON d3.DepartmentId == d4.DepartmentId
+        ) AS t0 ON e.EmployeeId == t0.EmployeeId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d6.DepartmentId, d5.EmployeeId, d5.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d5
+            INNER JOIN Departments AS d6 ON d5.DepartmentId == d6.DepartmentId
+        ) AS t1 ON e.EmployeeId == t1.EmployeeId
+        ORDER BY e.EmployeeId ASC, d.EmployeeId ASC, d.DepartmentId ASC, d0.DesignationId ASC, t.EmployeeId ASC, t.DepartmentId ASC, t.DepartmentId0 ASC, t0.EmployeeId ASC, t0.DepartmentId ASC, t0.DepartmentId0 ASC, t1.EmployeeId ASC, t1.DepartmentId0 ASC, t1.DepartmentId ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, GetAllEmployeesDTO>, 
+    EmployeeAPI.Data.ApplicationDbContext, 
+    False, 
+    False
+)' 
+2022-12-28 19:21:03.8164||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-12-28 19:21:03.8715||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (51ms). 
+2022-12-28 19:21:03.8754||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 19:21:04.2279||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 19:21:04.2342||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[EmployeeName], [e].[EmployeeAddress], [e].[EmployeeSalary], [d0].[DesignationName], [d0].[DesignationCode], [e].[DesignationId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[DepartmentName], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[DepartmentCode], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[DepartmentId], [t1].[EmployeeId], [t1].[DepartmentId0]
+FROM [Employees] AS [e]
+INNER JOIN [DepartmentEmployees] AS [d] ON [e].[EmployeeId] = [d].[EmployeeId]
+INNER JOIN [Designations] AS [d0] ON [e].[DesignationId] = [d0].[DesignationId]
+LEFT JOIN (
+    SELECT [d2].[DepartmentName], [d1].[EmployeeId], [d1].[DepartmentId], [d2].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d1]
+    INNER JOIN [Departments] AS [d2] ON [d1].[DepartmentId] = [d2].[DepartmentId]
+) AS [t] ON [e].[EmployeeId] = [t].[EmployeeId]
+LEFT JOIN (
+    SELECT [d4].[DepartmentCode], [d3].[EmployeeId], [d3].[DepartmentId], [d4].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d3]
+    INNER JOIN [Departments] AS [d4] ON [d3].[DepartmentId] = [d4].[DepartmentId]
+) AS [t0] ON [e].[EmployeeId] = [t0].[EmployeeId]
+LEFT JOIN (
+    SELECT [d6].[DepartmentId], [d5].[EmployeeId], [d5].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d5]
+    INNER JOIN [Departments] AS [d6] ON [d5].[DepartmentId] = [d6].[DepartmentId]
+) AS [t1] ON [e].[EmployeeId] = [t1].[EmployeeId]
+ORDER BY [e].[EmployeeId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[EmployeeId], [t1].[DepartmentId0], [t1].[DepartmentId] 
+2022-12-28 19:21:04.2833||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[EmployeeName], [e].[EmployeeAddress], [e].[EmployeeSalary], [d0].[DesignationName], [d0].[DesignationCode], [e].[DesignationId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[DepartmentName], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[DepartmentCode], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[DepartmentId], [t1].[EmployeeId], [t1].[DepartmentId0]
+FROM [Employees] AS [e]
+INNER JOIN [DepartmentEmployees] AS [d] ON [e].[EmployeeId] = [d].[EmployeeId]
+INNER JOIN [Designations] AS [d0] ON [e].[DesignationId] = [d0].[DesignationId]
+LEFT JOIN (
+    SELECT [d2].[DepartmentName], [d1].[EmployeeId], [d1].[DepartmentId], [d2].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d1]
+    INNER JOIN [Departments] AS [d2] ON [d1].[DepartmentId] = [d2].[DepartmentId]
+) AS [t] ON [e].[EmployeeId] = [t].[EmployeeId]
+LEFT JOIN (
+    SELECT [d4].[DepartmentCode], [d3].[EmployeeId], [d3].[DepartmentId], [d4].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d3]
+    INNER JOIN [Departments] AS [d4] ON [d3].[DepartmentId] = [d4].[DepartmentId]
+) AS [t0] ON [e].[EmployeeId] = [t0].[EmployeeId]
+LEFT JOIN (
+    SELECT [d6].[DepartmentId], [d5].[EmployeeId], [d5].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d5]
+    INNER JOIN [Departments] AS [d6] ON [d5].[DepartmentId] = [d6].[DepartmentId]
+) AS [t1] ON [e].[EmployeeId] = [t1].[EmployeeId]
+ORDER BY [e].[EmployeeId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[EmployeeId], [t1].[DepartmentId0], [t1].[DepartmentId] 
+2022-12-28 19:21:04.3072||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-12-28 19:21:04.3092||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 19:21:04.3092||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 19:21:04.3092||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1799.6168ms. 
+2022-12-28 19:21:04.3092||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-12-28 19:21:04.3092||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2022-12-28 19:21:04.3092||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-12-28 19:21:04.3092||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2022-12-28 19:21:04.3092||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter. 
+2022-12-28 19:21:04.3092||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-12-28 19:21:04.3092||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-12-28 19:21:04.3092||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2022-12-28 19:21:04.3092||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Buffering IAsyncEnumerable instance of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[EmployeeAPI.Models.DTOs.GetAllEmployeesDTO, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-12-28 19:21:04.3250||DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Employee>()
+    .Join(
+        inner: DbSet<DepartmentEmployee>(), 
+        outerKeySelector: employee => employee.EmployeeId, 
+        innerKeySelector: EmployeeDepartment => EmployeeDepartment.EmployeeId, 
+        resultSelector: (employee, EmployeeDepartment) => new GetAllEmployeesDTO{ 
+            EmployeeId = employee.EmployeeId, 
+            EmployeeName = employee.EmployeeName, 
+            EmployeeAddress = employee.EmployeeAddress, 
+            EmployeeSalary = employee.EmployeeSalary, 
+            DesignationName = employee.Designation.DesignationName, 
+            DesignationCode = employee.Designation.DesignationCode, 
+            DepartmentName = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentName)
+                .ToList(), 
+            DepartmentCode = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentCode)
+                .ToList(), 
+            DepartmentIds = DbSet<DepartmentEmployee>()
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId)
+                .Select(employee => employee.Department.DepartmentId)
+                .ToList(), 
+            DesignationId = employee.DesignationId 
+        }
+    )' 
+2022-12-28 19:21:04.3250||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' 
+2022-12-28 19:21:04.3577||DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<GetAllEmployeesDTO>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+        SELECT e.EmployeeId, e.EmployeeName, e.EmployeeAddress, e.EmployeeSalary, d0.DesignationName, d0.DesignationCode, e.DesignationId, d.EmployeeId, d.DepartmentId, d0.DesignationId, t.DepartmentName, t.EmployeeId, t.DepartmentId, t.DepartmentId0, t0.DepartmentCode, t0.EmployeeId, t0.DepartmentId, t0.DepartmentId0, t1.DepartmentId, t1.EmployeeId, t1.DepartmentId0
+        FROM Employees AS e
+        INNER JOIN DepartmentEmployees AS d ON e.EmployeeId == d.EmployeeId
+        INNER JOIN Designations AS d0 ON e.DesignationId == d0.DesignationId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d2.DepartmentName, d1.EmployeeId, d1.DepartmentId, d2.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d1
+            INNER JOIN Departments AS d2 ON d1.DepartmentId == d2.DepartmentId
+        ) AS t ON e.EmployeeId == t.EmployeeId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d4.DepartmentCode, d3.EmployeeId, d3.DepartmentId, d4.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d3
+            INNER JOIN Departments AS d4 ON d3.DepartmentId == d4.DepartmentId
+        ) AS t0 ON e.EmployeeId == t0.EmployeeId
+        LEFT JOIN Projection Mapping:
+        (
+            SELECT d6.DepartmentId, d5.EmployeeId, d5.DepartmentId AS DepartmentId0
+            FROM DepartmentEmployees AS d5
+            INNER JOIN Departments AS d6 ON d5.DepartmentId == d6.DepartmentId
+        ) AS t1 ON e.EmployeeId == t1.EmployeeId
+        ORDER BY e.EmployeeId ASC, d.EmployeeId ASC, d.DepartmentId ASC, d0.DesignationId ASC, t.EmployeeId ASC, t.DepartmentId ASC, t.DepartmentId0 ASC, t0.EmployeeId ASC, t0.DepartmentId ASC, t0.DepartmentId0 ASC, t1.EmployeeId ASC, t1.DepartmentId0 ASC, t1.DepartmentId ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, GetAllEmployeesDTO>, 
+    EmployeeAPI.Data.ApplicationDbContext, 
+    False, 
+    False
+)' 
+2022-12-28 19:21:04.3577||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-12-28 19:21:04.3577||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-12-28 19:21:04.3744||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 19:21:04.3744||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 19:21:04.3744||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[EmployeeName], [e].[EmployeeAddress], [e].[EmployeeSalary], [d0].[DesignationName], [d0].[DesignationCode], [e].[DesignationId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[DepartmentName], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[DepartmentCode], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[DepartmentId], [t1].[EmployeeId], [t1].[DepartmentId0]
+FROM [Employees] AS [e]
+INNER JOIN [DepartmentEmployees] AS [d] ON [e].[EmployeeId] = [d].[EmployeeId]
+INNER JOIN [Designations] AS [d0] ON [e].[DesignationId] = [d0].[DesignationId]
+LEFT JOIN (
+    SELECT [d2].[DepartmentName], [d1].[EmployeeId], [d1].[DepartmentId], [d2].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d1]
+    INNER JOIN [Departments] AS [d2] ON [d1].[DepartmentId] = [d2].[DepartmentId]
+) AS [t] ON [e].[EmployeeId] = [t].[EmployeeId]
+LEFT JOIN (
+    SELECT [d4].[DepartmentCode], [d3].[EmployeeId], [d3].[DepartmentId], [d4].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d3]
+    INNER JOIN [Departments] AS [d4] ON [d3].[DepartmentId] = [d4].[DepartmentId]
+) AS [t0] ON [e].[EmployeeId] = [t0].[EmployeeId]
+LEFT JOIN (
+    SELECT [d6].[DepartmentId], [d5].[EmployeeId], [d5].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d5]
+    INNER JOIN [Departments] AS [d6] ON [d5].[DepartmentId] = [d6].[DepartmentId]
+) AS [t1] ON [e].[EmployeeId] = [t1].[EmployeeId]
+ORDER BY [e].[EmployeeId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[EmployeeId], [t1].[DepartmentId0], [t1].[DepartmentId] 
+2022-12-28 19:21:04.4058||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[EmployeeName], [e].[EmployeeAddress], [e].[EmployeeSalary], [d0].[DesignationName], [d0].[DesignationCode], [e].[DesignationId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[DepartmentName], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[DepartmentCode], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[DepartmentId], [t1].[EmployeeId], [t1].[DepartmentId0]
+FROM [Employees] AS [e]
+INNER JOIN [DepartmentEmployees] AS [d] ON [e].[EmployeeId] = [d].[EmployeeId]
+INNER JOIN [Designations] AS [d0] ON [e].[DesignationId] = [d0].[DesignationId]
+LEFT JOIN (
+    SELECT [d2].[DepartmentName], [d1].[EmployeeId], [d1].[DepartmentId], [d2].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d1]
+    INNER JOIN [Departments] AS [d2] ON [d1].[DepartmentId] = [d2].[DepartmentId]
+) AS [t] ON [e].[EmployeeId] = [t].[EmployeeId]
+LEFT JOIN (
+    SELECT [d4].[DepartmentCode], [d3].[EmployeeId], [d3].[DepartmentId], [d4].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d3]
+    INNER JOIN [Departments] AS [d4] ON [d3].[DepartmentId] = [d4].[DepartmentId]
+) AS [t0] ON [e].[EmployeeId] = [t0].[EmployeeId]
+LEFT JOIN (
+    SELECT [d6].[DepartmentId], [d5].[EmployeeId], [d5].[DepartmentId] AS [DepartmentId0]
+    FROM [DepartmentEmployees] AS [d5]
+    INNER JOIN [Departments] AS [d6] ON [d5].[DepartmentId] = [d6].[DepartmentId]
+) AS [t1] ON [e].[EmployeeId] = [t1].[EmployeeId]
+ORDER BY [e].[EmployeeId], [d].[EmployeeId], [d].[DepartmentId], [d0].[DesignationId], [t].[EmployeeId], [t].[DepartmentId], [t].[DepartmentId0], [t0].[EmployeeId], [t0].[DepartmentId], [t0].[DepartmentId0], [t1].[EmployeeId], [t1].[DepartmentId0], [t1].[DepartmentId] 
+2022-12-28 19:21:04.4247||DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed. 
+2022-12-28 19:21:04.4247||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 19:21:04.4247||DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'EmployeeAPI' on server 'HP\SqlExpress'. 
+2022-12-28 19:21:04.4247||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter 
+2022-12-28 19:21:04.4247||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-12-28 19:21:04.4247||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-12-28 19:21:04.4247||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-12-28 19:21:04.4247||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-12-28 19:21:04.4247||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EmployeeAPI.Models.DTOs.GetAllEmployeesDTO, EmployeeAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-12-28 19:21:04.5762||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2022-12-28 19:21:04.5762||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-12-28 19:21:04.5762||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2022-12-28 19:21:04.5762||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI) in 2242.4367ms 
+2022-12-28 19:21:04.5762||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'EmployeeAPI.Controllers.EmployeeController.GetAllEmployees (EmployeeAPI)' 
+2022-12-28 19:21:04.5762||DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18158513711248048148" disconnecting. 
+2022-12-28 19:21:04.5762||DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed. 
+2022-12-28 19:21:04.5910||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44347/api/Employee - - - 200 1029 application/json;+charset=utf-8 2294.2431ms 

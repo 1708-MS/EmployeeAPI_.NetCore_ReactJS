@@ -27,13 +27,30 @@ namespace EmployeeAPI.Controllers
             _logger = logger;
         }
 
+
         //This is to Display all the Saved Employee Details
         [HttpGet]
         public IActionResult GetAllEmployees()
         {
-            // retrieve employees from database and return them
-            _logger.LogInformation("Retrieve all employees");
-           
+            _logger.LogInformation("GetAllEmployees Running properly");
+            // Log a message with the 'Trace' level
+            _logger.LogTrace("Trace log message");
+
+            // Log a message with the 'Debug' level
+            _logger.LogDebug("Debug log message");
+
+            // Log a message with the 'Information' level
+            _logger.LogInformation("Information log message");
+
+            // Log a message with the 'Warning' level
+            _logger.LogWarning("Warning log message");
+
+            // Log a message with the 'Error' level
+            _logger.LogError("Error log message");
+
+            // Log a message with the 'Critical' level
+            _logger.LogCritical("Critical log message");
+
             var employeeFromDb = (from employee in _context.Employees
                                   join EmployeeDepartment in _context.DepartmentEmployees
                                   on employee.EmployeeId equals EmployeeDepartment.EmployeeId
@@ -58,11 +75,7 @@ namespace EmployeeAPI.Controllers
                     getAllEmployeesDTOs.Add(employee);
                 }
             }
-            // log a warning if no employees were found
-            if (getAllEmployeesDTOs.Count == 0)
-            {
-                _logger.LogWarning("No employees were found in the database");
-            }
+           
             return Ok(employeeFromDb);     
         }
 
@@ -109,6 +122,24 @@ namespace EmployeeAPI.Controllers
         [HttpPost]
         public IActionResult SaveEmployees([FromBody] SaveEmployeesDTO saveEmployeesDTO)
         {
+            _logger.LogInformation("SaveEmployees Running properly");
+            // Log a message with the 'Trace' level
+            _logger.LogTrace("Trace log message");
+
+            // Log a message with the 'Debug' level
+            _logger.LogDebug("Debug log message");
+
+            // Log a message with the 'Information' level
+            _logger.LogInformation("Information log message");
+
+            // Log a message with the 'Warning' level
+            _logger.LogWarning("Warning log message");
+
+            // Log a message with the 'Error' level
+            _logger.LogError("Error log message");
+
+            // Log a message with the 'Critical' level
+            _logger.LogCritical("Critical log message");
             // Add/Save New Employees
             if (ModelState.IsValid && saveEmployeesDTO != null)
             {

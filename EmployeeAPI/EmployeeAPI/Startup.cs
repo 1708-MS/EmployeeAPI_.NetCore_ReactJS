@@ -2,21 +2,11 @@ using Microsoft.Extensions.Configuration;
 using EmployeeAPI.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using NLog.Web;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using EmployeeAPI.MappingProfile;
-using Microsoft.Extensions.Logging.AzureAppServices;
-using NLog.Extensions.Logging;
 
 namespace EmployeeAPI
 {
@@ -52,20 +42,15 @@ namespace EmployeeAPI
                         .AllowAnyMethod();
                     });
             });
-            // Configure NLog as the logging provider
-            services.AddLogging(loggingBuilder =>
-            {
-                loggingBuilder.ClearProviders();
-                loggingBuilder.SetMinimumLevel(LogLevel.Trace);
-                loggingBuilder.AddNLog();
-            });
+
 
 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggingBuilder loggingBuilder)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+     
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -78,14 +63,13 @@ namespace EmployeeAPI
             app.UseRouting();
 
             app.UseAuthorization();
+          
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-            // Enable NLog to capture log messages from the application
-            loggingBuilder.AddNLog();
-            AspNetExtensions.AddNLogWeb(loggingBuilder).AddNLogWeb();
+            
         }
     }
 }
