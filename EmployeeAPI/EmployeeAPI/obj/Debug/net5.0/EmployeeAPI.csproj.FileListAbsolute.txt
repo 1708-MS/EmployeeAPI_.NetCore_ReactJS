@@ -71,3 +71,9 @@ F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\obj\Debu
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\obj\Debug\net5.0\ref\EmployeeAPI.dll
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\obj\Debug\net5.0\EmployeeAPI.pdb
 F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\obj\Debug\net5.0\EmployeeAPI.genruntimeconfig.cache
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\Coding\CS Tasks\EmployeeAPI_.NetCore_ReactJS\EmployeeAPI\EmployeeAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

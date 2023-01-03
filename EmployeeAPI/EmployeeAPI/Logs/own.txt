@@ -190,3 +190,263 @@
 2022-12-28 19:21:02.5755||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
 2022-12-28 19:21:03.7152||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
 2022-12-28 19:21:04.3250||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2022-12-30 16:34:55.7589||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2022-12-30 16:34:55.7589||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2022-12-30 16:34:55.7589||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2022-12-30 16:34:55.7589||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2022-12-30 16:34:55.7589||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2022-12-30 16:34:55.7589||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2022-12-30 16:34:55.7589||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2022-12-30 16:34:55.7692||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2022-12-30 16:34:55.7692||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2022-12-30 16:34:55.7692||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2022-12-30 16:34:55.7692||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2022-12-30 16:34:55.8159||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2022-12-30 16:34:55.8159||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2022-12-30 16:34:55.8159||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2022-12-30 16:34:57.0977||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2022-12-30 16:34:57.7373||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2022-12-30 16:45:15.3052||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2022-12-30 16:45:15.3052||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2022-12-30 16:45:15.3052||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2022-12-30 16:45:15.3160||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2022-12-30 16:45:15.3160||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2022-12-30 16:45:15.3160||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2022-12-30 16:45:15.3160||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2022-12-30 16:45:15.3160||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2022-12-30 16:45:15.3160||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2022-12-30 16:45:15.3160||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2022-12-30 16:45:15.3339||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2022-12-30 16:45:15.3339||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2022-12-30 16:45:15.3339||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2022-12-30 16:45:15.3339||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:51:46.3988||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:51:46.3988||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:51:46.3988||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:51:46.3988||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:51:46.3988||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:51:46.3988||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:51:46.3988||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:51:46.4089||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:51:46.4089||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:51:46.4089||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:51:46.4089||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:51:46.4089||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:51:46.4263||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:51:46.4263||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:51:47.6370||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-02 11:51:47.7844||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:51:47.7844||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:51:47.7844||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:51:47.7844||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:51:47.7844||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:51:47.8028||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:51:47.8028||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:51:47.8633||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:51:47.8633||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:51:47.8633||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:51:47.8782||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:51:47.8782||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:51:47.8782||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:51:47.8782||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:51:48.7396||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-02 11:51:50.7837||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:51:50.7837||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:51:50.7837||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:51:50.8161||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:51:50.8336||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:51:50.8336||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:51:50.8336||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:51:50.8336||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:51:50.8336||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:51:50.8483||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:51:50.8483||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:51:50.8483||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:51:50.8641||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:51:50.8641||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:52:12.5681||INFO|EmployeeAPI.Controllers.EmployeeController|SaveEmployees Running properly |url: |action: 
+2023-01-02 11:52:12.5681||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:52:12.5681||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:52:12.5804||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:52:12.5804||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:52:12.5804||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:52:12.5804||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:52:12.8630||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:52:12.8630||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:52:12.8630||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:52:12.8630||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:52:12.8630||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:52:12.8630||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:52:12.8782||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:54:46.4115||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:54:46.4115||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:54:46.4115||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:54:46.4115||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:54:46.4115||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:54:46.4250||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:54:46.4250||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:54:54.6127||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:54:54.6127||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:54:54.6127||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:54:54.6127||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:54:54.6127||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:54:54.6303||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:54:54.6303||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:54:57.6843||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:54:57.6843||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:54:57.6843||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:54:57.6904||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:54:57.6904||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:54:57.6904||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:54:57.6904||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:55:05.0172||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:55:05.0172||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:55:05.0172||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:55:05.0172||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:55:05.0172||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:55:05.0172||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:55:05.0172||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:55:13.1032||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:55:13.1032||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:55:13.1032||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:55:13.1247||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:55:13.1276||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:55:13.1276||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:55:13.1431||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:55:22.8814||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:55:22.8814||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:55:22.8814||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:55:22.8935||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:55:22.8935||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:55:22.8935||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:55:22.8935||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:55:22.8935||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:55:22.9581||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:55:22.9765||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:55:22.9922||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:55:22.9922||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:55:23.0069||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:55:23.0227||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:55:29.3806||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:55:29.3806||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:55:29.3806||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:55:29.3806||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:55:29.3928||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:55:29.3928||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:55:29.3928||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:56:06.7216||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:56:06.7216||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:56:06.7216||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:56:06.7216||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:56:06.7216||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:56:06.7369||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:56:06.7369||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:56:06.7369||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:56:06.7369||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:56:06.7369||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:56:06.7369||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:56:06.7528||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:56:06.7528||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:56:06.7528||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:56:32.1541||INFO|EmployeeAPI.Controllers.EmployeeController|SaveEmployees Running properly |url: |action: 
+2023-01-02 11:56:32.1541||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:56:32.1541||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:56:32.1541||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:56:32.1599||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:56:32.1599||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:56:32.1599||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:56:32.2333||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:56:32.2333||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:56:32.2333||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:56:32.2382||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:56:32.2382||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:56:32.2382||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:56:32.2532||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:56:42.2209||INFO|EmployeeAPI.Controllers.EmployeeController|SaveEmployees Running properly |url: |action: 
+2023-01-02 11:56:42.2209||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:56:42.2209||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:56:42.2209||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:56:42.2209||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:56:42.2209||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:56:42.2209||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:56:42.2623||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:56:42.2623||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:56:42.2623||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:56:42.2687||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:56:42.2687||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:56:42.2687||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:56:42.2687||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:56:56.6424||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:56:56.6424||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:56:56.6424||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:56:56.6584||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:56:56.6584||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:56:56.6584||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:56:56.6584||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:56:56.6751||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:56:56.6986||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:56:56.6986||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:56:56.6986||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:56:56.7057||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:56:56.7057||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:56:56.7057||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:57:27.9036||INFO|EmployeeAPI.Controllers.EmployeeController|SaveEmployees Running properly |url: |action: 
+2023-01-02 11:57:27.9036||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:57:27.9036||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:57:27.9101||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:57:27.9101||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:57:27.9101||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:57:27.9101||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 11:57:27.9569||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 11:57:27.9569||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 11:57:27.9569||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 11:57:27.9569||INFO|EmployeeAPI.Controllers.EmployeeController|Information log message |url: |action: 
+2023-01-02 11:57:27.9569||WARN|EmployeeAPI.Controllers.EmployeeController|Warning log message |url: |action: 
+2023-01-02 11:57:27.9716||ERROR|EmployeeAPI.Controllers.EmployeeController|Error log message |url: |action: 
+2023-01-02 11:57:27.9716||FATAL|EmployeeAPI.Controllers.EmployeeController|Critical log message |url: |action: 
+2023-01-02 12:08:44.2600||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 12:08:44.2600||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 12:08:45.5529||WARN|Microsoft.EntityFrameworkCore.Query|The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results. |url: |action: 
+2023-01-02 12:08:45.6231||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-02 12:10:06.1793||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 12:10:06.1793||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 12:10:07.5672||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-02 12:25:58.9648||INFO|EmployeeAPI.Controllers.EmployeeController|GetAllEmployees Running properly |url: |action: 
+2023-01-02 12:26:00.5049||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-02 12:26:01.1748||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-02 12:27:25.0870||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 12:27:25.0870||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 12:27:26.5176||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-02 12:27:27.3261||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-02 12:36:48.4987||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: |action: 
+2023-01-02 12:36:48.4987||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 12:36:49.7476||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-02 12:36:50.3779||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-02 12:39:54.1323||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message `{x}` |url: |action: 
+2023-01-02 12:39:54.1323||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: |action: 
+2023-01-02 12:39:55.6458||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-02 12:39:56.3148||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: |action: 
+2023-01-03 11:19:35.8732||WARN|Microsoft.EntityFrameworkCore.Infrastructure|'AddEntityFramework*' was called on the service provider, but 'UseInternalServiceProvider' wasn't called in the DbContext options configuration. Consider removing the 'AddEntityFramework*' call, as in most cases it's not needed and may cause conflicts with other products and services registered in the same service provider. |url: |action: 
+2023-01-03 11:20:13.7306||WARN|Microsoft.EntityFrameworkCore.Infrastructure|'AddEntityFramework*' was called on the service provider, but 'UseInternalServiceProvider' wasn't called in the DbContext options configuration. Consider removing the 'AddEntityFramework*' call, as in most cases it's not needed and may cause conflicts with other products and services registered in the same service provider. |url: |action: 
+2023-01-03 11:35:38.7603||WARN|Microsoft.EntityFrameworkCore.Infrastructure|'AddEntityFramework*' was called on the service provider, but 'UseInternalServiceProvider' wasn't called in the DbContext options configuration. Consider removing the 'AddEntityFramework*' call, as in most cases it's not needed and may cause conflicts with other products and services registered in the same service provider. |url: |action: 
+2023-01-03 11:39:36.1517||WARN|Microsoft.EntityFrameworkCore.Infrastructure|'AddEntityFramework*' was called on the service provider, but 'UseInternalServiceProvider' wasn't called in the DbContext options configuration. Consider removing the 'AddEntityFramework*' call, as in most cases it's not needed and may cause conflicts with other products and services registered in the same service provider. |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 11:39:36.2781||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 11:39:36.2781||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 11:39:39.6082||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 11:39:40.8147||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 13:03:27.0162||WARN|Microsoft.EntityFrameworkCore.Infrastructure|'AddEntityFramework*' was called on the service provider, but 'UseInternalServiceProvider' wasn't called in the DbContext options configuration. Consider removing the 'AddEntityFramework*' call, as in most cases it's not needed and may cause conflicts with other products and services registered in the same service provider. |url: https://localhost/api/account/authenticate|action: Authenticate
+2023-01-03 13:04:41.3464||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 13:04:41.3464||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 13:04:41.5112||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 13:50:23.0840||WARN|Microsoft.EntityFrameworkCore.Infrastructure|'AddEntityFramework*' was called on the service provider, but 'UseInternalServiceProvider' wasn't called in the DbContext options configuration. Consider removing the 'AddEntityFramework*' call, as in most cases it's not needed and may cause conflicts with other products and services registered in the same service provider. |url: https://localhost/api/account/authenticate|action: Authenticate
+2023-01-03 13:51:00.5349||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 13:51:00.5349||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 13:51:00.6878||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 13:51:02.0178||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 13:51:02.0178||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 14:01:59.0554||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 14:01:59.0554||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 14:19:25.9450||WARN|Microsoft.EntityFrameworkCore.Infrastructure|'AddEntityFramework*' was called on the service provider, but 'UseInternalServiceProvider' wasn't called in the DbContext options configuration. Consider removing the 'AddEntityFramework*' call, as in most cases it's not needed and may cause conflicts with other products and services registered in the same service provider. |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 14:19:26.0684||TRACE|EmployeeAPI.Controllers.EmployeeController|Trace log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 14:19:26.0684||DEBUG|EmployeeAPI.Controllers.EmployeeController|Debug log message |url: https://localhost/api/Employee|action: GetAllEmployees
+2023-01-03 14:19:29.3784||WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation either via 'Include' or through projection but no 'QuerySplittingBehavior' has been configured. By default Entity Framework will use 'QuerySplittingBehavior.SingleQuery' which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))' |url: https://localhost/api/Employee|action: GetAllEmployees

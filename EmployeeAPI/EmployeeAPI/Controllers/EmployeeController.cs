@@ -1,6 +1,7 @@
 ﻿using EmployeeAPI.Data;
 using EmployeeAPI.Models;
 using EmployeeAPI.Models.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -17,6 +18,7 @@ namespace EmployeeAPI.Controllers
 {
     [Route("api/Employee")]
     [ApiController]
+    [Authorize]
     public class EmployeeController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -32,24 +34,24 @@ namespace EmployeeAPI.Controllers
         [HttpGet]
         public IActionResult GetAllEmployees()
         {
-            _logger.LogInformation("GetAllEmployees Running properly");
-            // Log a message with the 'Trace' level
+            //_logger.LogInformation("GetAllEmployees Running properly");
+            //// Log a message with the 'Trace' level
             _logger.LogTrace("Trace log message");
 
             // Log a message with the 'Debug' level
             _logger.LogDebug("Debug log message");
 
-            // Log a message with the 'Information' level
-            _logger.LogInformation("Information log message");
+            //// Log a message with the 'Information' level
+            //_logger.LogInformation("Information log message");
 
-            // Log a message with the 'Warning' level
-            _logger.LogWarning("Warning log message");
+            //// Log a message with the 'Warning' level
+            //_logger.LogWarning("Warning log message");
 
-            // Log a message with the 'Error' level
-            _logger.LogError("Error log message");
+            //// Log a message with the 'Error' level
+            //_logger.LogError("Error log message");
 
-            // Log a message with the 'Critical' level
-            _logger.LogCritical("Critical log message");
+            //// Log a message with the 'Critical' level
+            //_logger.LogCritical("Critical log message");
 
             var employeeFromDb = (from employee in _context.Employees
                                   join EmployeeDepartment in _context.DepartmentEmployees
@@ -75,8 +77,7 @@ namespace EmployeeAPI.Controllers
                     getAllEmployeesDTOs.Add(employee);
                 }
             }
-           
-            return Ok(employeeFromDb);     
+            return Ok(getAllEmployeesDTOs);     
         }
 
         // Get/Fetch Employee details from the database by Id
@@ -122,25 +123,6 @@ namespace EmployeeAPI.Controllers
         [HttpPost]
         public IActionResult SaveEmployees([FromBody] SaveEmployeesDTO saveEmployeesDTO)
         {
-            _logger.LogInformation("SaveEmployees Running properly");
-            // Log a message with the 'Trace' level
-            _logger.LogTrace("Trace log message");
-
-            // Log a message with the 'Debug' level
-            _logger.LogDebug("Debug log message");
-
-            // Log a message with the 'Information' level
-            _logger.LogInformation("Information log message");
-
-            // Log a message with the 'Warning' level
-            _logger.LogWarning("Warning log message");
-
-            // Log a message with the 'Error' level
-            _logger.LogError("Error log message");
-
-            // Log a message with the 'Critical' level
-            _logger.LogCritical("Critical log message");
-            // Add/Save New Employees
             if (ModelState.IsValid && saveEmployeesDTO != null)
             {
                 Employee employee = new Employee()

@@ -4,8 +4,6 @@ import { useForm } from "react-hook-form";
 import InputField from "../../Components/FormFields/InputField";
 import SelectField from "../../Components/FormFields/SelectField";
 
-
-
 function AddEmployee({ getAll, departments, designations }) {
   const {
     control,

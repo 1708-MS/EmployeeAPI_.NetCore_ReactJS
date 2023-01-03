@@ -1,4 +1,6 @@
-﻿using EmployeeAPI.Models;
+﻿using EmployeeAPI.Identity;
+using EmployeeAPI.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeAPI.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -16,9 +18,13 @@ namespace EmployeeAPI.Data
         public DbSet<Designation> Designations { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<DepartmentEmployee> DepartmentEmployees { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<ApplicationRole> ApplicationRoles { get; set; }
+        //public DbSet<Role> Roles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<DepartmentEmployee>()
                 .HasKey(t => new { t.EmployeeId, t.DepartmentId });
 

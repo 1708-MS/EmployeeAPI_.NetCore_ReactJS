@@ -1,6 +1,7 @@
 ﻿using EmployeeAPI.Data;
 using EmployeeAPI.Models;
 using EmployeeAPI.Models.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ namespace EmployeeAPI.Controllers
 {
     [Route("api/Department")]
     [ApiController]
+    [Authorize]
     public class DepartmentController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

@@ -1,4 +1,5 @@
 ﻿using EmployeeAPI.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ namespace EmployeeAPI.Controllers
 {
     [Route("api/Designation")]
     [ApiController]
+    [Authorize]
     public class DesignationController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
