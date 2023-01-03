@@ -18,7 +18,7 @@ namespace EmployeeAPI.Controllers
 {
     [Route("api/Employee")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class EmployeeController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -155,47 +155,105 @@ namespace EmployeeAPI.Controllers
             else
                 return BadRequest();
         }
-
         [HttpPut]
-        public IActionResult UpdateEmployee([FromBody] UpdateEmployeesDTO updateEmployeesDTO)
+        public async Task<IActionResult> UpdateEmployee([FromBody] UpdateEmployeesDTO updateEmployeesDTO)
         {
             if (ModelState.IsValid && updateEmployeesDTO != null)
             {
                 // Updating and Saving Employees and Designation
-                Employee employee = new Employee()
-                {
-                    EmployeeId = updateEmployeesDTO.EmployeeId,
-                    EmployeeName = updateEmployeesDTO.EmployeeName,
-                    EmployeeAddress = updateEmployeesDTO.EmployeeAddress,
-                    EmployeeSalary = updateEmployeesDTO.EmployeeSalary,
-                    DesignationId = updateEmployeesDTO.DesignationId,
-                };
-                _context.Employees.Update(employee);
-                _context.SaveChanges();
+                var employee = await _context.Employees.FindAsync(updateEmployeesDTO.EmployeeId);
+                employee.DesignationId = updateEmployeesDTO.DesignationId;
 
                 // Updating the assigned Departments to the Employees
-                var employeeExistingDepartments = _context.DepartmentEmployees.Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId).ToList();
-                _context.RemoveRange(employeeExistingDepartments);
+                _context.RemoveRange(_context.DepartmentEmployees.Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId && !updateEmployeesDTO.DepartmentIds.Contains(departmentEmployee.DepartmentId)));
                 List<DepartmentEmployee> departmentEmployees = new List<DepartmentEmployee>();
                 foreach (var empDep in updateEmployeesDTO.DepartmentIds)
                 {
-                    DepartmentEmployee departmentEmployee = new DepartmentEmployee()
+                    if (!_context.DepartmentEmployees.Any(de => de.EmployeeId == employee.EmployeeId && de.DepartmentId == empDep))
                     {
-                        EmployeeId = employee.EmployeeId,
-                        DepartmentId = empDep
-                    };
-                    departmentEmployees.Add(departmentEmployee);
+                        DepartmentEmployee departmentEmployee = new DepartmentEmployee()
+                        {
+                            EmployeeId = employee.EmployeeId,
+                            DepartmentId = empDep
+                        };
+                        departmentEmployees.Add(departmentEmployee);
+                    }
                 }
                 _context.DepartmentEmployees.AddRange(departmentEmployees);
-                _context.SaveChanges();
+
+                await _context.SaveChangesAsync();
                 return Ok();
             }
             return BadRequest();
         }
+        
+        //public async Task<IActionResult> UpdateEmployee([FromBody] UpdateEmployeesDTO updateEmployeesDTO)
+        //{
+        //    if (ModelState.IsValid && updateEmployeesDTO != null)
+        //    {
+        //        // Updating and Saving Employees and Designation
+        //        var employee = await _context.Employees.FindAsync(updateEmployeesDTO.EmployeeId);
+        //        employee.DesignationId = updateEmployeesDTO.DesignationId;
 
-        // Directly delete full details of the Employees from Database
-        // This deletes the Designation and Departments assigned to the Employees
-        [HttpDelete("{id:int}")]
+                //        // Updating the assigned Departments to the Employees
+                //        _context.RemoveRange(_context.DepartmentEmployees.Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId && !updateEmployeesDTO.DepartmentIds.Contains(departmentEmployee.DepartmentId)));
+                //        List<DepartmentEmployee> departmentEmployees = new List<DepartmentEmployee>();
+                //        foreach (var empDep in updateEmployeesDTO.DepartmentIds)
+                //        {
+                //            DepartmentEmployee departmentEmployee = new DepartmentEmployee()
+                //            {
+                //                EmployeeId = employee.EmployeeId,
+                //                DepartmentId = empDep
+                //            };
+                //            departmentEmployees.Add(departmentEmployee);
+                //        }
+                //        _context.DepartmentEmployees.AddRange(departmentEmployees);
+
+                //        await _context.SaveChangesAsync();
+                //        return Ok();
+                //    }
+                //    return BadRequest();
+                //}
+                //[HttpPut]
+                //public IActionResult UpdateEmployee([FromBody] UpdateEmployeesDTO updateEmployeesDTO)
+                //{
+                //    if (ModelState.IsValid && updateEmployeesDTO != null)
+                //    {
+                //        // Updating and Saving Employees and Designation
+                //        Employee employee = new Employee()
+                //        {
+                //            EmployeeId = updateEmployeesDTO.EmployeeId,
+                //            EmployeeName = updateEmployeesDTO.EmployeeName,
+                //            EmployeeAddress = updateEmployeesDTO.EmployeeAddress,
+                //            EmployeeSalary = updateEmployeesDTO.EmployeeSalary,
+                //            DesignationId = updateEmployeesDTO.DesignationId,
+                //        };
+                //        _context.Employees.Update(employee);
+                //        _context.SaveChanges();
+
+                //        // Updating the assigned Departments to the Employees
+                //        var employeeExistingDepartments = _context.DepartmentEmployees.Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId).ToList();
+                //        _context.RemoveRange(employeeExistingDepartments);
+                //        List<DepartmentEmployee> departmentEmployees = new List<DepartmentEmployee>();
+                //        foreach (var empDep in updateEmployeesDTO.DepartmentIds)
+                //        {
+                //            DepartmentEmployee departmentEmployee = new DepartmentEmployee()
+                //            {
+                //                EmployeeId = employee.EmployeeId,
+                //                DepartmentId = empDep
+                //            };
+                //            departmentEmployees.Add(departmentEmployee);
+                //        }
+                //        _context.DepartmentEmployees.AddRange(departmentEmployees);
+                //        _context.SaveChanges();
+                //        return Ok();
+                //    }
+                //    return BadRequest();
+                //}
+
+                // Directly delete full details of the Employees from Database
+                // This deletes the Designation and Departments assigned to the Employees
+                [HttpDelete("{id:int}")]
         public IActionResult DeleteEmployees(int id)
         {
             var employeeInDb = _context.Employees.Find(id);

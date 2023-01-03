@@ -1,4 +1,5 @@
-import axios from "axios";
+//import axios from "axios";
+import axios, { Axios } from "axios";
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import InputField from "../../Components/FormFields/InputField";
@@ -14,18 +15,20 @@ function EditEmployee({ getAll, employeeForm, departments, designations }) {
   } = useForm();
 
   const onSubmit = (formValues) => {
-   debugger;
+    debugger;
     console.log(formValues, "form values");
-    axios
-      .put(`https://localhost:44347/api/Employee`, {...formValues, employeeId:employeeForm?.employeeId })
+    Axios
+      .put(`https://localhost:44347/api/Employee`, {
+        ...formValues,
+        employeeId: employeeForm?.employeeId,
+      })
       .then((res) => {
-       
         getAll();
         alert("data saved successfully");
       })
       .catch((error) => {
         alert("something went wrong with api");
-    });
+      });
   };
 
   useEffect(() => {
@@ -67,14 +70,6 @@ function EditEmployee({ getAll, employeeForm, departments, designations }) {
                         },
                       }}
                     />
-                    {/* <input
-                      onChange={changeHandler}
-                      type="text"
-                      placeholder="Enter the Employee's Name"
-                      name="employeeName"
-                      id="txtName"
-                      className="form-control"
-                    /> */}
                   </div>
                 </div>
                 <div className="form-group row">
@@ -93,14 +88,6 @@ function EditEmployee({ getAll, employeeForm, departments, designations }) {
                         },
                       }}
                     />
-                    {/* <input
-                      onChange={changeHandler}
-                      type="text"
-                      placeholder="Enter the Employee's Address"
-                      name="employeeAddress"
-                      id="txtAddress"
-                      className="form-control"
-                    /> */}
                   </div>
                 </div>
                 <div className="form-group row">
@@ -119,14 +106,6 @@ function EditEmployee({ getAll, employeeForm, departments, designations }) {
                         },
                       }}
                     />
-                    {/* <input
-                      onChange={changeHandler}
-                      type="number"
-                      placeholder="Enter the Employee's Salary"
-                      name="employeeSalary"
-                      id="txtSalary"
-                      className="form-control"
-                    /> */}
                   </div>
                 </div>
                 <div className="form-group row">
@@ -146,24 +125,6 @@ function EditEmployee({ getAll, employeeForm, departments, designations }) {
                         },
                       }}
                     />
-                    {/* <select
-                      className="form-control basic-multi-select"
-                      name="departmentId"
-                      type="dropdown"
-                      onChange={changeHandler}
-                      //value={employeeForm.departmentId}
-                      id="txtDepartment"
-                    >
-                      <option>Select one or multiple Departments</option>
-                      {departments?.map((dept) => (
-                        <option
-                          value={dept.departmentId}
-                          key={dept.departmentId}
-                        >
-                          {dept.departmentName}
-                        </option>
-                      ))}
-                    </select> */}
                   </div>
                 </div>
                 <div className="form-group row">
@@ -182,23 +143,6 @@ function EditEmployee({ getAll, employeeForm, departments, designations }) {
                         },
                       }}
                     />
-                    {/* <select
-                      className="form-control"
-                      name="designationId"
-                      type="dropdown"
-                      onChange={changeHandler}
-                      id="txtDesignation"
-                    >
-                      <option>Select a Designation</option>
-                      {designations?.map((desg) => (
-                        <option
-                          value={desg.designationId}
-                          key={desg.designationId}
-                        >
-                          {desg.designationName}
-                        </option>
-                      ))}
-                    </select> */}
                   </div>
                 </div>
                 {/* Footer */}

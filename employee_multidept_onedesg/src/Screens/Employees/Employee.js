@@ -1,7 +1,8 @@
-import axios from "axios";
+import axios, { Axios } from "axios";
 import React, { useEffect, useState } from "react";
 import AddEmployee from "./AddEmployee";
 import EditEmployee from "./EditEmployee";
+import Swal from "sweetalert2";
 
 function Employee() {
   const [employees, setEmployees] = useState();
@@ -17,7 +18,7 @@ function Employee() {
 
   // Get All Saved Employees details
   function getAll() {
-    axios
+    Axios
       .get("https://localhost:44347/api/Employee")
       .then((d) => {
         setEmployees(d.data);
@@ -115,15 +116,55 @@ function Employee() {
   // };
 
   //Delete the complete detials of the Saved Employees
+  // function deleteClick(employeeId) {
+  //   var ans = alert("Do u want to delete employee?");
+  //   if (ans) return;
+
+  //   axios
+  //     .delete("https://localhost:44347/api/Employee/" + employeeId)
+  //     .then((d) => {
+  //       getAll();
+  //     })
+  //     .catch((e) => {
+  //       alert("something went wrong. Plz try again.");
+  //     });
+  // }
+
+  // function deleteClick(employeeId) {
+  //   const confirmDelete = window.prompt("Are you sure you want to delete this employee? Enter 'yes' to confirm.");
+  //   if (confirmDelete === "yes") {
+  //     axios
+  //       .delete("https://localhost:44347/api/Employee/" + employeeId)
+  //       .then((d) => {
+  //         getAll();
+  //       })
+  //       .catch((e) => {
+  //         alert("something went wrong. Plz try again.");
+  //       });
+  //   }
+  // }
+
   function deleteClick(employeeId) {
-    axios
-      .delete("https://localhost:44347/api/Employee/" + employeeId)
-      .then((d) => {
-        getAll();
-      })
-      .catch((e) => {
-        alert("something went wrong. Plz try again.");
-      });
+    Swal.fire({
+      title: "Are you sure?",
+      text: "Are you sure you want to delete this employee?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Confirm",
+      cancelButtonText: "Cancel",
+    }).then((result) => {
+      if (result.value) {
+        // Make the DELETE request
+        axios
+          .delete("https://localhost:44347/api/Employee/" + employeeId)
+          .then((d) => {
+            getAll();
+          })
+          .catch((e) => {
+            alert("something went wrong. Plz try again.");
+          });
+      }
+    });
   }
 
   function getDropDown() {

@@ -12,7 +12,7 @@ namespace EmployeeAPI.Controllers
 {
     [Route("api/Designation")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class DesignationController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

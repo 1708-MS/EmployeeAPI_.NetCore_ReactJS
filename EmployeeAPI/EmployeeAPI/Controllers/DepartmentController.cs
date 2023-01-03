@@ -14,7 +14,7 @@ namespace EmployeeAPI.Controllers
 {
     [Route("api/Department")]
     [ApiController]
-    [Authorize]
+   // [Authorize]
     public class DepartmentController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
