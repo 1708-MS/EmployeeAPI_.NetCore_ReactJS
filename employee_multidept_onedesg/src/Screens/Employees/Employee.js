@@ -1,4 +1,4 @@
-import axios, { Axios } from "axios";
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import AddEmployee from "./AddEmployee";
 import EditEmployee from "./EditEmployee";
@@ -18,7 +18,7 @@ function Employee() {
 
   // Get All Saved Employees details
   function getAll() {
-    Axios
+    axios
       .get("https://localhost:44347/api/Employee")
       .then((d) => {
         setEmployees(d.data);

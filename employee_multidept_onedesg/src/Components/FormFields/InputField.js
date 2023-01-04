@@ -29,6 +29,7 @@ function InputField({
       field?.onChange(normalize(e.target.value));
       if (onInputChange !== undefined) {
         onInputChange(normalize(e.target.value));
+       
       }
     } else {
       field?.onChange(

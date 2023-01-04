@@ -1,5 +1,5 @@
 //import axios from "axios";
-import axios, { Axios } from "axios";
+import axios from "axios";
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import InputField from "../../Components/FormFields/InputField";
@@ -17,7 +17,7 @@ function EditEmployee({ getAll, employeeForm, departments, designations }) {
   const onSubmit = (formValues) => {
     debugger;
     console.log(formValues, "form values");
-    Axios
+    axios
       .put(`https://localhost:44347/api/Employee`, {
         ...formValues,
         employeeId: employeeForm?.employeeId,
@@ -97,7 +97,7 @@ function EditEmployee({ getAll, employeeForm, departments, designations }) {
                   <div className="col-sm-8">
                     <InputField
                       control={control}
-                      type="text"
+                      type="number"
                       name="employeeSalary"
                       rules={{
                         required: {

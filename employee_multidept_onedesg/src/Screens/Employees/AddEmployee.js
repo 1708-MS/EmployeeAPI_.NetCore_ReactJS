@@ -1,5 +1,5 @@
 import axios from "axios";
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import InputField from "../../Components/FormFields/InputField";
 import SelectField from "../../Components/FormFields/SelectField";
@@ -100,7 +100,7 @@ function AddEmployee({ getAll, departments, designations }) {
                   <div className="col-sm-8">
                     <InputField
                       control={control}
-                      type="text"
+                      type="number"
                       name="employeeSalary"
                       rules={{
                         required: {

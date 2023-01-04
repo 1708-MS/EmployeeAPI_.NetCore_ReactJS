@@ -31,28 +31,10 @@ namespace EmployeeAPI.Controllers
 
 
         //This is to Display all the Saved Employee Details
+
         [HttpGet]
         public IActionResult GetAllEmployees()
         {
-            //_logger.LogInformation("GetAllEmployees Running properly");
-            //// Log a message with the 'Trace' level
-            _logger.LogTrace("Trace log message");
-
-            // Log a message with the 'Debug' level
-            _logger.LogDebug("Debug log message");
-
-            //// Log a message with the 'Information' level
-            //_logger.LogInformation("Information log message");
-
-            //// Log a message with the 'Warning' level
-            //_logger.LogWarning("Warning log message");
-
-            //// Log a message with the 'Error' level
-            //_logger.LogError("Error log message");
-
-            //// Log a message with the 'Critical' level
-            //_logger.LogCritical("Critical log message");
-
             var employeeFromDb = (from employee in _context.Employees
                                   join EmployeeDepartment in _context.DepartmentEmployees
                                   on employee.EmployeeId equals EmployeeDepartment.EmployeeId
@@ -77,84 +59,151 @@ namespace EmployeeAPI.Controllers
                     getAllEmployeesDTOs.Add(employee);
                 }
             }
-            return Ok(getAllEmployeesDTOs);     
+            return Ok(getAllEmployeesDTOs);
         }
 
         // Get/Fetch Employee details from the database by Id
+        //[HttpGet("{id:int}")]
+        //public IActionResult GetEmployeeById(int id)
+        //{
+
+        //    var employeeInDb = _context.Employees.Include(employee => employee.Designation).FirstOrDefault(employee => employee.EmployeeId == id);
+        //    if (employeeInDb != null)
+        //    {
+        //        var departmentInDb = _context.DepartmentEmployees.Where(departmentEmployee => departmentEmployee.EmployeeId == employeeInDb.EmployeeId)
+        //            .Select(departmentEmployee => departmentEmployee.DepartmentId);
+
+        //        List<string> departmentNamesList = new List<string>();
+        //        List<int> departmentCodesList = new List<int>();
+        //        foreach (var departmentId in departmentInDb)
+        //        {
+        //            var departmentNameList = _context.Departments.Where(department => department.DepartmentId == departmentId)
+        //                .Select(department => department.DepartmentName).FirstOrDefault();
+        //            var departmentCodeList = _context.Departments.Where(department => department.DepartmentId == departmentId)
+        //                .Select(department => department.DepartmentCode).FirstOrDefault();
+
+        //            departmentNamesList.Add(departmentNameList);
+        //            departmentCodesList.Add(departmentCodeList);
+        //        }
+        //        GetEmployeeByIdDTO getEmployeeByIdDTO = new GetEmployeeByIdDTO()
+        //        {
+        //            EmployeeId = employeeInDb.EmployeeId,
+        //            EmployeeName = employeeInDb.EmployeeName,
+        //            EmployeeAddress = employeeInDb.EmployeeAddress,
+        //            EmployeeSalary = employeeInDb.EmployeeSalary,
+        //            DepartmentNames = departmentNamesList,
+        //            DepartmentCodes = departmentCodesList,
+        //            DesignationId = employeeInDb.DesignationId,
+        //            DesignationName = employeeInDb.Designation.DesignationName,
+        //            DesignationCode = employeeInDb.Designation.DesignationCode
+        //        };
+        //        return Ok(getEmployeeByIdDTO);
+        //    }
+        //    return NotFound();
+        //}
+
         [HttpGet("{id:int}")]
         public IActionResult GetEmployeeById(int id)
         {
-           //var employeeInDb = _context.Employees.Find(id);
             var employeeInDb = _context.Employees.Include(employee => employee.Designation).FirstOrDefault(employee => employee.EmployeeId == id);
-            if (employeeInDb != null)
+            if (employeeInDb == null)
             {
-                var departmentInDb = _context.DepartmentEmployees.Where(departmentEmployee => departmentEmployee.EmployeeId == employeeInDb.EmployeeId)
-                    .Select(departmentEmployee => departmentEmployee.DepartmentId);
-                //var designationInDb = _context.Designations.FirstOrDefault(desg => desg.DesignationId == id);
-                List<string> departmentNamesList = new List<string>();
-                List<int> departmentCodesList = new List<int>();
-                foreach (var departmentId in departmentInDb)
-                {
-                    var departmentNameList = _context.Departments.Where(department => department.DepartmentId == departmentId)
-                        .Select(department => department.DepartmentName).FirstOrDefault();
-                    var departmentCodeList = _context.Departments.Where(department => department.DepartmentId == departmentId)
-                        .Select(department => department.DepartmentCode).FirstOrDefault();
-
-                    departmentNamesList.Add(departmentNameList);
-                    departmentCodesList.Add(departmentCodeList);
-                }
-                GetEmployeeByIdDTO getEmployeeByIdDTO = new GetEmployeeByIdDTO()
-                {
-                    EmployeeId = employeeInDb.EmployeeId,
-                    EmployeeName = employeeInDb.EmployeeName,
-                    EmployeeAddress = employeeInDb.EmployeeAddress,
-                    EmployeeSalary = employeeInDb.EmployeeSalary,
-                    DepartmentNames = departmentNamesList,
-                    DepartmentCodes = departmentCodesList,
-                    DesignationId = employeeInDb.DesignationId,
-                    DesignationName = employeeInDb.Designation.DesignationName,
-                    DesignationCode = employeeInDb.Designation.DesignationCode
-                };
-                return Ok(getEmployeeByIdDTO);
+                return NotFound();
             }
-            return NotFound();
+            var departmentInDb = _context.DepartmentEmployees
+                .Where(departmentEmployee => departmentEmployee.EmployeeId == employeeInDb.EmployeeId)
+                .Join(_context.Departments, departmentEmployee => departmentEmployee.DepartmentId, department => department.DepartmentId,
+                (departmentEmployee, department) => new { department.DepartmentName, department.DepartmentCode });
+
+            var departmentNamesList = departmentInDb.Select(d => d.DepartmentName).ToList();
+            var departmentCodesList = departmentInDb.Select(d => d.DepartmentCode).ToList();
+
+            var getEmployeeByIdDTO = new GetEmployeeByIdDTO
+            {
+                EmployeeId = employeeInDb.EmployeeId,
+                EmployeeName = employeeInDb.EmployeeName,
+                EmployeeAddress = employeeInDb.EmployeeAddress,
+                EmployeeSalary = employeeInDb.EmployeeSalary,
+                DepartmentNames = departmentNamesList,
+                DepartmentCodes = departmentCodesList,
+                DesignationId = employeeInDb.DesignationId,
+                DesignationName = employeeInDb.Designation.DesignationName,
+                DesignationCode = employeeInDb.Designation.DesignationCode
+            };
+            return Ok(getEmployeeByIdDTO);
         }
+
+        //[HttpPost]
+        //public IActionResult SaveEmployees([FromBody] SaveEmployeesDTO saveEmployeesDTO)
+        //{
+        //    if (ModelState.IsValid && saveEmployeesDTO != null)
+        //    {
+        //        Employee employee = new Employee()
+        //        {
+        //            EmployeeName = saveEmployeesDTO.EmployeeName,
+        //            EmployeeAddress = saveEmployeesDTO.EmployeeAddress,
+        //            EmployeeSalary = saveEmployeesDTO.EmployeeSalary,
+        //            DesignationId = saveEmployeesDTO.DesignationId,
+        //        };
+        //        _context.Employees.Add(employee);
+        //        _context.SaveChanges();
+
+        //        // Departments allotment to the saved Employees 
+        //        List<DepartmentEmployee> departmentEmployees = new List<DepartmentEmployee>();
+        //        foreach (var employeeDepartment in saveEmployeesDTO.DepartmentId)
+        //        {
+        //            DepartmentEmployee departmentEmployee = new DepartmentEmployee()
+        //            {
+        //                EmployeeId = employee.EmployeeId,
+        //                DepartmentId = employeeDepartment
+        //            };
+        //            departmentEmployees.Add(departmentEmployee);
+        //        }
+
+        //        //Saving the alloted department in the database
+        //        _context.DepartmentEmployees.AddRange(departmentEmployees);
+        //        _context.SaveChanges();
+        //        return Ok();
+        //    }
+        //    else
+        //        return BadRequest();
+        //}
 
         [HttpPost]
         public IActionResult SaveEmployees([FromBody] SaveEmployeesDTO saveEmployeesDTO)
         {
             if (ModelState.IsValid && saveEmployeesDTO != null)
             {
-                Employee employee = new Employee()
+                var employee = new Employee
                 {
                     EmployeeName = saveEmployeesDTO.EmployeeName,
                     EmployeeAddress = saveEmployeesDTO.EmployeeAddress,
                     EmployeeSalary = saveEmployeesDTO.EmployeeSalary,
-                    DesignationId = saveEmployeesDTO.DesignationId,
+                    DesignationId = saveEmployeesDTO.DesignationId
                 };
+
                 _context.Employees.Add(employee);
                 _context.SaveChanges();
 
-                // Departments allotment to the saved Employees 
-                List<DepartmentEmployee> departmentEmployees = new List<DepartmentEmployee>();
-                foreach (var employeeDepartment in saveEmployeesDTO.DepartmentId)
-                {
-                    DepartmentEmployee departmentEmployee = new DepartmentEmployee()
+                var departmentEmployees = saveEmployeesDTO.DepartmentId
+                    .Select(departmentId => new DepartmentEmployee
                     {
                         EmployeeId = employee.EmployeeId,
-                        DepartmentId = employeeDepartment
-                    };
-                    departmentEmployees.Add(departmentEmployee);
-                }
+                        DepartmentId = departmentId
+                    })
+                    .ToList();
 
-                //Saving the alloted department in the database
                 _context.DepartmentEmployees.AddRange(departmentEmployees);
                 _context.SaveChanges();
                 return Ok();
             }
             else
+            {
                 return BadRequest();
+            }
         }
+
+
         [HttpPut]
         public async Task<IActionResult> UpdateEmployee([FromBody] UpdateEmployeesDTO updateEmployeesDTO)
         {
@@ -165,7 +214,7 @@ namespace EmployeeAPI.Controllers
                 employee.DesignationId = updateEmployeesDTO.DesignationId;
 
                 // Updating the assigned Departments to the Employees
-                _context.RemoveRange(_context.DepartmentEmployees.Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId && !updateEmployeesDTO.DepartmentIds.Contains(departmentEmployee.DepartmentId)));
+               
                 List<DepartmentEmployee> departmentEmployees = new List<DepartmentEmployee>();
                 foreach (var empDep in updateEmployeesDTO.DepartmentIds)
                 {
@@ -180,6 +229,7 @@ namespace EmployeeAPI.Controllers
                     }
                 }
                 _context.DepartmentEmployees.AddRange(departmentEmployees);
+                _context.RemoveRange(_context.DepartmentEmployees.Where(departmentEmployee => departmentEmployee.EmployeeId == employee.EmployeeId && !updateEmployeesDTO.DepartmentIds.Contains(departmentEmployee.DepartmentId)));
 
                 await _context.SaveChangesAsync();
                 return Ok();
@@ -253,7 +303,8 @@ namespace EmployeeAPI.Controllers
 
                 // Directly delete full details of the Employees from Database
                 // This deletes the Designation and Departments assigned to the Employees
-                [HttpDelete("{id:int}")]
+       
+        [HttpDelete("{id:int}")]
         public IActionResult DeleteEmployees(int id)
         {
             var employeeInDb = _context.Employees.Find(id);
