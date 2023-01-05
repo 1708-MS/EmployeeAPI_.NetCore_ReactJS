@@ -9,6 +9,8 @@ namespace EmployeeAPI.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        public string Address { get; set; }
+        public string Salary { get; set; }
         [NotMapped]
         public string Token { get; set; }
         [NotMapped]
